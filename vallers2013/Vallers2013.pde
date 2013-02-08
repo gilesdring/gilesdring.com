@@ -2,12 +2,14 @@
 
 Universe u;
 Heart[] h;
-int num_hearts = 50;
+int num_hearts = 24;
 int active_hearts = 0;
+float launch_rate = 0.5;
 
 void setup() {
   // size(400,400);
   size(window.innerWidth, window.innerHeight);
+  background(255,0);
   u = new Universe();
   u.addLaw(new WrapEdge());
   u.setBounds(-50,-50,width+50,height+50);
@@ -16,22 +18,23 @@ void setup() {
     h[i] = new Heart(
       new PVector(random(u.min_x, u.max_x), u.max_y),
       new PVector(random(-5.0, 5.0), -random(5.0,20.0)),
-      random(0.1,0.2),
+      random(0.2,0.4),
       random(-0.3,0.3)
     );
   }
 }
 
 void draw() {
-  emit(2);
+  smooth();
+  emit(launch_rate);
   u.update();
   background(255,0);
   u.paint();
   // filter(BLUR,1);
 }
 
-void emit(int pct) {
-  if ( random(100) < pct & active_hearts < num_hearts ) {
+void emit(float pct) {
+  if ( ( random(100.0) < pct ) && ( active_hearts < num_hearts ) ) {
     u.addThing(h[active_hearts++]);
   }
 }
