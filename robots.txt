@@ -1,1 +1,4 @@
 User-Agent: *
+Disallow: /heart.svg
+Disallow: /Vallers2013.html
+Disallow: /Vallers2013.pde

@@ -1,42 +1,50 @@
 /* */
 
 Universe u;
+Heart[] h;
+int num_hearts = 50;
+int active_hearts = 0;
 
 void setup() {
   // size(400,400);
   size(window.innerWidth, window.innerHeight);
   u = new Universe();
-  u.addLaw(new KillEdge());
+  u.addLaw(new WrapEdge());
   u.setBounds(-50,-50,width+50,height+50);
+  h = new Heart[num_hearts];
+  for (int i = 0; i < num_hearts; i++) {
+    h[i] = new Heart(
+      new PVector(random(u.min_x, u.max_x), u.max_y),
+      new PVector(random(-5.0, 5.0), -random(5.0,20.0)),
+      random(0.1,0.2),
+      random(-0.3,0.3)
+    );
+  }
 }
 
 void draw() {
-  background(255,0);
   emit(2);
   u.update();
+  background(255,0);
   u.paint();
   // filter(BLUR,1);
 }
 
 void emit(int pct) {
-  if ( random(100) < pct ) {
-    Heart h = new Heart(
-      new PVector(random(u.min_x, u.max_x), u.max_y),
-      new PVector(random(-5.0, 5.0), -random(5.0,20.0))
-    );
-    u.addThing(h);
+  if ( random(100) < pct & active_hearts < num_hearts ) {
+    u.addThing(h[active_hearts++]);
   }
 }
 
 class Heart extends Particle {
   PShape heart;
-  Heart(PVector p, PVector v) {
+  Heart(PVector p, PVector v, float s, float r) {
     super(p, v);
     // heart = loadShape("heart.svg");
     heart = loadShape(heart_url);
     heart.disableStyle();
-    float scale = random(0.05,0.1);
-    float rotate = random(-0.3,0.3);
+    float scale = s;
+    float rotate = r;
     heart.scale(scale);
     heart.rotate(rotate);
   }
@@ -261,6 +269,28 @@ abstract class EdgeLaw extends Law {
   EdgeLaw() { super("Edge"); }
   boolean inUniverse(Particle p, Universe u) {
     return ( p.position.x > u.min_x ) && ( p.position.x < u.max_x ) && ( p.position.y > u.min_y ) && ( p.position.y < u.max_y ); 
+  }
+}
+
+class WrapEdge extends EdgeLaw {
+  void apply(Universe u) {
+    PVector pos;
+    for ( Thing t: u.getThings() ) {
+      if ( ! ( t instanceof Particle ) ) continue;
+      Particle p = (Particle)t;
+      if ( p.position.x < u.min_x || p.position.x > u.max_x ) {
+        p.position.x = reMap( p.position.x, u.min_x, u.max_x );
+      }
+      if ( p.position.y < u.min_y || p.position.y > u.max_y ) {
+        p.position.y = reMap( p.position.y, u.min_y, u.max_y );
+      }
+    }
+  }
+  float reMap(float v, float min, float max) {
+    float w = max - min;
+    float o = ( v - min ) / w;
+    while ( o < 0 ) o++;
+    return min + ( ( o - int(o) ) * w );
   }
 }
 
