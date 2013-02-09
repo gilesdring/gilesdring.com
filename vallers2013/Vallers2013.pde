@@ -6,6 +6,7 @@ int num_hearts = 24;
 int active_hearts = 0;
 float launch_rate = 0.5;
 
+
 void setup() {
   // size(400,400);
   size(window.innerWidth, window.innerHeight);
@@ -22,6 +23,7 @@ void setup() {
       random(-0.3,0.3)
     );
   }
+  noLoop();
 }
 
 void draw() {
@@ -43,7 +45,6 @@ class Heart extends Particle {
   PShape heart;
   Heart(PVector p, PVector v, float s, float r) {
     super(p, v);
-    // heart = loadShape("heart.svg");
     heart = loadShape(heart_url);
     heart.disableStyle();
     float scale = s;
