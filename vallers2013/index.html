@@ -2,7 +2,8 @@
 
 <html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Dr+Sugiyama|La+Belle+Aurore' rel='stylesheet' type='text/css'>
+<!-- <link href='http://fonts.googleapis.com/css?family=Dr+Sugiyama|La+Belle+Aurore|Cabin+Sketch|Londrina+Sketch' rel='stylesheet' type='text/css'> -->
+<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
 
 <style>
 * {
@@ -12,8 +13,11 @@
 body {
 	background-color: #ffc0c0;
 	/*font-family: 'Dr Sugiyama', cursive;*/
-	font-family: 'La Belle Aurore', cursive;
+	/*font-family: 'La Belle Aurore', cursive;*/
+	font-family: 'Cabin Sketch', cursive;
+	/*font-family: 'Londrina Sketch', cursive;*/
 	text-align: center;
+	font-size: 40pt;
 }
 a {
 	text-decoration: none;
@@ -29,7 +33,9 @@ div#big_heart svg {
 	width: 600px;
 }
 div#message {
-	display: none; }
+	display: none;
+	padding: 2em;
+}
 div#message p {
 	padding-bottom: 1em;
 }
@@ -41,55 +47,34 @@ div#player {
 	background: red;
 }
 h1 {
-	font-size: 50pt;
+	font-size: 200%;
 	font-weight: normal;
 	display: none;
 }
-p {
-	font-size: 26pt;
+p.ps {
+	font-size: 70%;
+	font-style: italic;
 }
 </style>
 <script src="https://github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 var heart_url='heart.svg';
-// var heart_url='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><path d="m 67.001387,159.75823 c 0,0 -101.240667,-116.555574 -52.071407,-153.9933299 29.637006,-22.5657881 52.071407,31.7045029 52.071407,31.7045029 0,0 22.434401,-54.270291 52.071403,-31.7045029 C 168.24205,43.202656 67.001387,159.75823 67.001387,159.75823 z"/></svg>';
+var x;
 
-// This is all iOS kludge
-// http://developer.apple.com/library/safari/#documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/Device-SpecificConsiderations/Device-SpecificConsiderations.html#//apple_ref/doc/uid/TP40009523-CH5-SW1
-
-// init = (function() {
-// 	ios_kludge = function() {
-		// var p = document.querySelector('div#player');
-		// var a = p.querySelector('audio');
-		// var b = document.createElement('input');
-		// b.setAttribute('id', 'play_button');
-		// b.setAttribute('type', 'button');
-		// b.setAttribute('value', 'Sing to me!');
-		// b.onclick = function() {
-		// 	document.getElementById('mirrorball').play();
-		// 	p.style.display = 'none';
-		// }
-		// p.insertBefore(b, p.firstChild);
-	// }
-// 	setup = function() {
-// 		var p = Processing.getInstanceById('hearts');
-// 		o.onhover = d.style.font-weight = 'bold';
-// 		p.noLoop();
-// 	}
-// 	return setup;
-// })();
+Processing.disableInit();
 
 window.onload = function() {
+	Processing.reload();
  	var o = document.querySelector('h1#open');
  	var l = document.querySelector('div#loading');
  	var bh = document.querySelector('div#big_heart')
  	var h = document.querySelector('path#heart');
- 	o.onclick = open_card;
- 	h.onclick = open_card;
  	l.style.display = 'none';
  	o.style.display = 'block';
  	bh.style.display = 'block';
-};
+ 	o.onclick = open_card;
+ 	h.onclick = open_card;
+}
 
 open_card = function() {
 	var h = document.querySelector('div#big_heart');
@@ -107,6 +92,7 @@ open_card = function() {
 </head>
 <body>
 	<canvas id='hearts' data-processing-sources='Vallers2013.pde' style='position: fixed; left: 0; top:0; z-index: -1;'></canvas>
+	<!-- <canvas id='hearts' style='position: fixed; left: 0; top:0; z-index: -1;'></canvas> -->
 
 	<div id='loading'>
 		<p>Good things come to those who&hellip; wait</p>
@@ -126,7 +112,7 @@ open_card = function() {
 		<p>I have booked us a night at <a href="http://www.theweavers.co.uk/">The Weavers</a> in Golcar after we&apos;ve been for our day at Titanic Spa, including a romantic <a href="http://www.theweavers.co.uk/menus">dinner</a>.</p>
 		<p>All my love&hellip;
 		<p>Your secret admirer x x x</p>
-		<p><em>(Don&apos;t look at the web page address - look away from the web page address)</em></p>
+		<p class='ps'>(Don&apos;t look at the web page address - look away from the web page address)</p>
 	</div>
 
 	<audio id='mirrorball' loop>

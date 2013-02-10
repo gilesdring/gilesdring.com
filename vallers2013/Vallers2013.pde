@@ -1,5 +1,3 @@
-/* */
-
 Universe u;
 Heart[] h;
 int num_hearts = 24;
