@@ -1,24 +1,26 @@
-.site-header {
-  position: relative;
-  line-height: 60px;
-  h1 {
-    display: inline;
-  }
-  nav {
-    float: right;
-    line-height: 60px;
-    ul {
-      list-style-type: none;
-      display: block;
-      margin: 0;
-      padding: 0;
-      li {
-        display: inline-block;
-      }
-    }
-  }
-}
-
 img.unscaled {
   width: auto;
+}
+
+body {
+  margin: 0;
+}
+
+body > nav {
+  z-index: 999;
+  position: fixed;
+  display: block;
+  left: 0;
+  right: 0;
+  padding-left: 12.5%;
+  font-style: italic;
+  & > * {
+    position: relative;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      display: inline;
+    }
+  }
 }

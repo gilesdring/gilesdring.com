@@ -1,0 +1,8 @@
+- title: Home
+  page: index.md
+- title: Blog
+  page: blog/index.html
+# - title: Music
+#   page: music.html
+# - title: Projects
+#   page: projects.html
