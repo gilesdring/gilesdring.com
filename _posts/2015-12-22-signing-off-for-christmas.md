@@ -22,9 +22,9 @@ the social media echo chamber and look at videos of cats.
 
 The following blinding revelation occurred to me
 
-* I'm not all that interesting...
-* ...neither is anyone else. No hard feelings and of course I don't mean
-  _you_ personally. This is more of a collective thing.
+1. I'm not all that interesting...
+2. ...neither is anyone else. No hard feelings and of course I don't mean
+   _you_ personally. This is more of a collective thing.
 
 It's telling that this is the first blog post I've published in well over a
 year (on this account, in any case). Naturally I had something to say, so
