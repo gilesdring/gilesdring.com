@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Giles Dring
 ---
 
 Welcome to my personal site.

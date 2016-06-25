@@ -1,0 +1,24 @@
+.site-header {
+  position: relative;
+  line-height: 60px;
+  h1 {
+    display: inline;
+  }
+  nav {
+    float: right;
+    line-height: 60px;
+    ul {
+      list-style-type: none;
+      display: block;
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+img.unscaled {
+  width: auto;
+}
