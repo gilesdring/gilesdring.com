@@ -16,6 +16,8 @@ Here is my most recent blog post, or browse through the [full archive][BLOG].
 
 ## Projects
 
-Here is a small selection of the projects that I have worked on in my own time.
+Here is a small selection of personal projects.
 
-* [ScrambledPhysics](http://gilesdring.github.io/scrambledphysics/) 100% Processing Physics engine
+{% for project in site.projects %}
+[{{ project.title }}]({{ project.url }}) -- {{ project.excerpt | strip_html}}
+{% endfor %}

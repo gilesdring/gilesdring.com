@@ -9,7 +9,11 @@ published: true
 meta: {}
 ---
 
-<p id="yui_3_17_2_19_1416323009056_12629">I've written a simple physics library in <a id="yui_3_17_2_19_1416323009056_13108" data-cke-saved-href="http://processing.org" href="http://processing.org">Processing</a>. It's called ScrambledPhysics, and you can <a id="yui_3_17_2_19_1416323009056_12631" target="_blank" data-cke-saved-href="http://gilesdring.github.com/scrambledphysics" href="http://gilesdring.github.com/scrambledphysics">get it on github</a>.</p>
+I've written a simple physics library in [Processing](http://processing.org).
+It's called ScrambledPhysics, and you can
+[get it on github](http://gilesdring.github.io/scrambledphysics).
+
+
 <canvas style="image-rendering: optimizequality ! important;" height="480" width="640" tabindex="0" id="ScrambledPhysics" data-processing-sources="https://raw.githubusercontent.com/gilesdring/scrambledphysics/master/ScrambledPhysics.pde /s/Example.pde">
   <p>Your browser does not support the canvas tag.</p>
   <!-- Note: you can put any alternative content here. -->
