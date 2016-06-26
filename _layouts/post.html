@@ -1,5 +1,8 @@
 ---
 layout: page
 ---
-
+{% assign post = page %}
+<aside class="sidebar">
+  {% include post_meta.html %}
+</aside>
 {{ content }}

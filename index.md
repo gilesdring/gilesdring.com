@@ -3,17 +3,16 @@ layout: page
 title: Giles Dring
 ---
 
-Welcome to my personal site.
-
 ## Blog
 
-Here is my most recent blog post. The full archive is on my [blog]()
+Here is my most recent blog post, or browse through the [full archive][BLOG].
+
+[BLOG]: /blog/
 
 {% for post in site.posts limit:1 %}
-### {{post.title}}
-{{ post.excerpt }}
-[Read more]({{ post.url }})
+<html>{% include post_excerpt.html level=3%}</html>
 {% endfor %}
+
 
 ## Projects
 

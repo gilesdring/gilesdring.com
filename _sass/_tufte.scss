@@ -23,6 +23,16 @@ $et-book-path: "et-book";
                            background: #b4d5fe; }
 }
 
+@mixin move-to-sidebar {
+  float: right;
+  clear: right;
+  margin-right: -60%;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: baseline;
+  position: relative;
+}
 /* Import ET Book styles
    adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
 
@@ -192,7 +202,7 @@ table.booktabs { width: auto;
 article { position: relative;
           padding: 5rem 0rem; }
 
-section { padding-top: 1rem;
+main, section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
 p, ol, ul { font-size: 1.4rem; }
