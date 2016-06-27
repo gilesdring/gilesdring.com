@@ -18,6 +18,4 @@ Here is my most recent blog post, or browse through the [full archive][BLOG].
 
 Here is a small selection of personal projects.
 
-{% for project in site.projects %}
-[{{ project.title }}]({{ project.url }}) -- {{ project.excerpt | strip_html}}
-{% endfor %}
+{% include project_list.html level=3 %}
