@@ -1,5 +1,2 @@
-<p>
-  Published on
-  <time class="dt-published" datetime="{{ post.date }}">{{ post.date | date: '%d %B, %Y'}}</time>.
-  {% if post.tags.size > 0 %}Tagged with {{ post.tags }}{% endif %}
-</p>
+Published on <time class="dt-published" datetime="{{ post.date }}">{{ post.date | date: '%d %B, %Y'}}</time>.
+{% if post.tags.size > 0 %}Tagged with {{ post.tags }}{% endif %}

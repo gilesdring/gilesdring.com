@@ -1,7 +1,15 @@
 {% assign level = include.level | default: 2 %}
-<h{{ level }}>{{ post.title }}</h{{ level }}>
-<aside class="sidebar">
-  {% include post_meta.html %}
-  <p><a href="{{ post.url }}">Read More &xrarr;</a></p>
-</aside>
-{{ post.excerpt }}
+<section class='excerpt'>
+  <h{{ level }}>{{ post.title }}</h{{ level }}>
+  {{ post.excerpt }}
+  <aside class="sidebar">
+    <ul>
+      <li>
+        {% include post_meta.html %}
+      </li>
+      <li>
+        <a href="{{ post.url }}">Read More &xrarr;</a>
+      </li>
+    </ul>
+  </aside>
+</section>
