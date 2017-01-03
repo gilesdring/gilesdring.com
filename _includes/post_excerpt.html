@@ -2,14 +2,8 @@
 <section class='excerpt'>
   <h{{ level }}><a href='{{post.url}}'>{{ post.title }}</a></h{{ level }}>
   {{ post.excerpt }}
-  <aside class="sidebar">
-    <ul>
-      <li>
-        {% include post_meta.html %}
-      </li>
-      <li>
-        <a href="{{ post.url }}">Read More &xrarr;</a>
-      </li>
-    </ul>
+  <aside>
+    {% include post_meta.html %}
+    <a href="{{ post.url }}">Read More &xrarr;</a>
   </aside>
 </section>

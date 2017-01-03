@@ -6,19 +6,9 @@
 </head>
   <body>
     {% include nav.html %}
-    <article>
-      {% include header.html %}
-
-      <main>
-        {{ content }}
-      </main>
-
-      {% include footer.html %}
-    </article>
-
-  {% include analytics.html %}
-
+    <main>
+      {{ content }}
+    </main>
     {% include analytics.html %}
   </body>
-
 </html>
