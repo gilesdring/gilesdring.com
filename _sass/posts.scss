@@ -25,3 +25,9 @@
     content: 'to the right';
   }
 }
+
+article.excerpt {
+  footer {
+    @include gutterize;
+  }
+}
