@@ -26,7 +26,7 @@ $content-width:    800px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
+$break-small:      760px;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -41,6 +41,13 @@ $on-laptop:        800px;
     }
 }
 
-
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == screen {
+    @media only screen and (min-width: $break-small + 1) { @content; }
+  }
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)

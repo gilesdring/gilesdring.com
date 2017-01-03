@@ -1,0 +1,19 @@
+body > nav {
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: $background-color;
+  padding-left: 12.5%;
+  font-style: italic;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  & > * {
+    position: relative;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      display: inline;
+    }
+  }
+}
