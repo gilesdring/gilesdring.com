@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Giles Dring
 ---
 
@@ -19,7 +19,7 @@ My most recent posts are listed <span id='latestpostsposition'></span>.
 [BLOG]: /blog/
 
 {% for post in site.posts limit:1 %}
-<html>{% include post_excerpt.html level=3 %}</html>
+  {% include post_excerpt.html level=3 %}
 {% endfor %}
 
 
