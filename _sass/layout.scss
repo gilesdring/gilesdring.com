@@ -1,0 +1,16 @@
+main {
+  @include respond-to('screen') {
+    section {
+      position: relative;
+      width: $content-width;
+
+      aside {
+        margin-left: 1rem;
+        position: absolute;
+        left: $content-width;
+        top: 3rem;
+        width: $gutter-width;
+      }
+    }
+  }
+}

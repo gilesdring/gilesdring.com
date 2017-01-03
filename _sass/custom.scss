@@ -1,5 +1,4 @@
 
-
 img.unscaled {
   width: auto;
 }
@@ -23,33 +22,6 @@ body {
       position: relative;
       width: 100%;
     }
-  }
-}
-
-#latestposts {
-  ul {
-    padding: 0;
-    list-style-type: none;
-    font-size: 1.1rem;
-    @include respond-to(screen) {
-    }
-    li {
-      @include respond-to(screen) {
-        display: inline;
-        &::after {
-          content: " ~"
-        }
-        &:last-of-type::after {
-          content: ''
-        }
-      }
-    }
-  }
-}
-#latestpostsposition::after {
-  content: 'above';
-  @include respond-to(screen) {
-    content: "to the right";
   }
 }
 
