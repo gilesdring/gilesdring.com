@@ -1,12 +1,12 @@
 ---
-layout: page
+layout: default
 title:  Random Idea Spike
 ---
 
+{% include header.html %}
+
 {% for post in paginator.posts %}
-<section class="h-entry">
   {% include post_excerpt.html %}
-</section>
 {% endfor %}
 
 {% if paginator.previous_page %}

@@ -27,9 +27,11 @@
 }
 
 article.excerpt {
-  footer {
-    @include gutterize {
-      bottom: 0;
-    }
+  @include respond-to(screen) {
+    footer {
+      @include gutterize {
+        bottom: 0;
+      }
+    }    
   }
 }
