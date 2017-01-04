@@ -1,0 +1,7 @@
+{% if include.cover %}
+  {% assign view = '&view=coverart' %}
+{% endif %}
+<p class='half-width centred'><em>Listen on Spotify:</em></p>
+<iframe class='spotify embedded-content half-width centred'
+  src="https://embed.spotify.com/?uri={{ include.uri }}{{ view }}">
+</iframe>

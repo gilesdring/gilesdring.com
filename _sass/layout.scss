@@ -80,13 +80,14 @@ main {
 }
 
 .sixteen-by-nine {
-  width: $content-width;
-  height: $content-width * 9 / 16;
+  width: 100%;
+  max-width: ($content-width - $gutter-width);
+  height: ($content-width - $gutter-width) * 9 / 16;
 }
 
 .spotify {
   background-color: transparent;
-  height: 380px;
+  height: 480px;
 }
 
 .soundcloud {
@@ -106,4 +107,11 @@ main {
   li:last-child {
     padding-right: 0;
   }
+}
+
+blockquote {
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-left: 2px solid $grey-color;
 }
