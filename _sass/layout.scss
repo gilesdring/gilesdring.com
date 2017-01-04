@@ -8,6 +8,7 @@
 
 main {
   margin-top: 2rem;
+  padding: 1rem;
   @include respond-to('screen') {
     section, article {
       position: relative;
@@ -22,6 +23,46 @@ main {
   }
 }
 
-iframe.spotify {
-  margin: 1rem;
+.centred {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embedded-content {
+  border: none;
+}
+
+.half-width {
+  width: 100%;
+  max-width: $content-width / 2;
+}
+
+.sixteen-by-nine {
+  width: $content-width;
+  height: $content-width * 9 / 16;
+}
+
+.spotify {
+  background-color: transparent;
+  height: 380px;
+}
+
+.soundcloud {
+  height: 400px;
+}
+
+.license {
+  padding: 0.5rem;
+  display: flex;
+  img {
+    min-width: 88px;
+  }
+  li {
+    display: block;
+    padding-right: 0.5rem;
+  }
+  li:last-child {
+    padding-right: 0;
+  }
 }
