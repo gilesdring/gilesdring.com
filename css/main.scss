@@ -45,6 +45,7 @@ $break-small:      $content-width + $gutter-width;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "reset",
+  "typography",
   "layout",
   "nav",
   "posts"
