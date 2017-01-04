@@ -32,6 +32,8 @@ $min-padding:      20px;
 
 $break-point:      $content-width + (2 * $min-padding);
 
+$profile-image-size: 80px;
+
 // Use media queries like this:
 // @include respond-to('screen') {
 //     .wrapper {

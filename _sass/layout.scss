@@ -43,7 +43,6 @@
 
 .guttered {
   @extend .full-width;
-  margin-top: 2rem;
 
   // margin: 1rem;
   @include respond-to('screen') {
@@ -73,6 +72,7 @@
 
 main {
   @extend .guttered;
+  margin-top: $profile-image-size + 30px;
 }
 
 .embedded-content {
