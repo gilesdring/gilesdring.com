@@ -32,6 +32,16 @@ article.excerpt {
       @include gutterize {
         bottom: 0;
       }
-    }    
+    }
+  }
+}
+
+article.post {
+  @include respond-to(screen) {
+    footer {
+      @include gutterize {
+        top: $h1-size * $base-line-height;
+      }
+    }
   }
 }
