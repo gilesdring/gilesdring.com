@@ -1,0 +1,8 @@
+{% for item in include.playlist %}
+  <audio controls="controls" title="{{ item.title }}" >
+    {% for file in item.files %}
+      <source src="{{ file.src }}" type="{{ file.format }}">
+    {% endfor %}
+  Your browser does not support the audio element.
+  </audio>
+{% endfor %}
