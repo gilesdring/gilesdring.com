@@ -14,13 +14,11 @@ type: post
 published: true
 meta: {}
 ---
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body>
-<p><em>On 28 Nov last year, I <a href="https://twitter.com/gilesdring/status/406144073230479360">tweeted</a> about a thorny jQuery Mobile / HTML5 Offline bug.</em></p>
-
-      <img src="/squarespace_images/static_512dc7c9e4b004435d99d353_513e5c89e4b07e27db8696f0_52dc64f0e4b04385633dc61a_1390175473926_iphone-%28null%29-0.jpg_" alt="">
-
-
+<p><em>On 28 Nov last year, I tweeted about a thorny jQuery Mobile / HTML5 Offline bug.</em></p>
+<blockquote class="twitter-tweet" data-lang="en">
+  <p lang="en" dir="ltr">Unravelled a thorny jQuery Mobile + Safari + html5 Application Cache + History API bug. Workaround sorted!</p>&mdash; Giles Dring (@gilesdring)
+  <a href="https://twitter.com/gilesdring/status/406144073230479360">November 28, 2013</a>
+</blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <p><em>This is probably no great shakes in the grand scheme of things, but the tweet has been left unexplained like some minor homage to Fermat ever since. The full story can now be told. Are you sitting comfortably? Then I'll begin...</em></p>
 
 <p>So I was coding a mobile address book for my business unit at work using jQuery Mobile. I had a view that people would want to use it offline. I'd got the right manifest entries in and had built some lightweight refresh code which would run automatically, or could be manually triggered and the updates seemed to be working smoothly. The final feature to integrate was the dialog which presented the contact details for the person on the chart.</p>
@@ -31,10 +29,10 @@ meta: {}
 
 <p>This suggests a workaround:</p>
 
-<ul>
+<ol>
 <li>Remove <code>data-rel='back'</code> from the button anchor</li>
 <li>Fix the <code>href</code> to refer to the calling page. This should be being done anyway, as a fallback.</li>
-</ul>
+</ol>
 
 <p>I implemented this and it worked! It seems this is a known oddity in Mobile Safari on iOS7 (which also seems to occur on the Mac Safari). There is some clash between History API and the Application Cache functionality, so offline apps don't interact properly with the browser history.</p>
 
@@ -47,4 +45,3 @@ therefore history.back() will never work and history.length
 stays in 1 forever. (Thanks to 10+ people who reported this
 problem!)
 </code></pre>
-</body></html>
