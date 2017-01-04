@@ -1,6 +1,6 @@
 body {
   background: $background-color;
-  & > nav {
+  > nav, > footer {
     background: $brand-color;
     color: $background-color;
     a, a:visited {

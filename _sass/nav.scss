@@ -8,14 +8,14 @@ body > nav {
   left: 0;
   right: 0;
   top: 0;
-  @extend %shadow-box;
+  // @extend %shadow-box;
   div {
     @extend .full-width;
     position: relative;
     height: 3rem;
     img {
       width: $profile-image-size;
-      @extend %shadow-box;
+      // @extend %shadow-box;
       position: absolute;
       top: 5px;
       border-radius: 10px;
