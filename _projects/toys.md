@@ -16,8 +16,6 @@ of the 18th Century.
 
 [TOYS]: http://en.wikipedia.org/wiki/Birmingham_toy_industry
 
-{% include cc_license.html %}
-
 ## Automated Compact Calendar
 
 I came across the [Compact Calendar][CC] by David Seah a few years ago, and
@@ -32,5 +30,9 @@ time-to-time. Do take a look at his site.
 In the meantime, here's my [Automated Compact Calendar][ACC] tool as an Excel
 template.
 
-[CC]:  http://davidseah.com/pceo/cal "Link to the David Seah pcal website"
+{% include cc_license.html author='Giles Dring' title='Automated Compact Calendar' source='http://davidseah.com/node/compact-calendar/' %}
+
+
+
+[CC]:  http://davidseah.com/node/compact-calendar/ "Link to the David Seah Compact Calendar"
 [ACC]: https://dl.dropboxusercontent.com/u/368534/AutomatedCompactCalendar.XLT

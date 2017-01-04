@@ -51,3 +51,18 @@ main {
 .soundcloud {
   height: 400px;
 }
+
+.license {
+  padding: 0.5rem;
+  display: flex;
+  img {
+    min-width: 88px;
+  }
+  li {
+    display: block;
+    padding-right: 0.5rem;
+  }
+  li:last-child {
+    padding-right: 0;
+  }
+}
