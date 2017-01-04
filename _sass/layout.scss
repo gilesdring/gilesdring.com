@@ -2,8 +2,8 @@
   margin-left: 1rem;
   position: absolute;
   left: $content-width;
-  top: 3rem;
   width: $gutter-width;
+  @content;
 }
 
 main {
@@ -14,7 +14,9 @@ main {
       width: $content-width;
 
       aside {
-        @include gutterize;
+        @include gutterize {
+          top: 2.25rem;
+        }
       }
     }
   }

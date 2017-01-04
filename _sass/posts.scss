@@ -28,6 +28,8 @@
 
 article.excerpt {
   footer {
-    @include gutterize;
+    @include gutterize {
+      bottom: 0;
+    }
   }
 }
