@@ -23,6 +23,10 @@ body > nav {
       @include respond-to('screen') {
         left: 0;
       }
+      @include respond-to(small-screen) {
+        top: 35px;
+        width: $profile-image-size * 0.8;
+      }
     }
     section {
       padding-left: $profile-image-size + 5px;
@@ -34,6 +38,9 @@ body > nav {
           display: inline;
         }
       }
+      @include respond-to(small-screen) {
+        padding-left: 0;
+      };
     }
   }
 }

@@ -28,9 +28,10 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 $gutter-width:     200px;
-$min-padding:      20px;
+$min-padding:      10px;
 
 $break-point:      $content-width + (2 * $min-padding);
+$small-screen:     450px;
 
 $profile-image-size: 80px;
 
@@ -42,6 +43,9 @@ $profile-image-size: 80px;
 //     }
 // }
 @mixin respond-to($media) {
+  @if $media == small-screen {
+    @media only screen and (max-width: $small-screen) { @content; }
+  }
   @if $media == handhelds {
     @media only screen and (max-width: $break-point) { @content; }
   }
