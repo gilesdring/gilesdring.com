@@ -33,18 +33,21 @@ main {
   border: none;
 }
 
-.spotify {
-  background-color: transparent;
-  height: 380px;
-}
-
 .half-width {
   width: 100%;
   max-width: $content-width / 2;
 }
 
-
 .sixteen-by-nine {
   width: $content-width;
   height: $content-width * 9 / 16;
+}
+
+.spotify {
+  background-color: transparent;
+  height: 380px;
+}
+
+.soundcloud {
+  height: 400px;
 }
