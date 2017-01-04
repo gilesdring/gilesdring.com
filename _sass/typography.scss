@@ -14,6 +14,10 @@ h2 {
   font-weight: $strong-font-weight;
 }
 
+aside, footer {
+  font-size: $small-font-size;
+}
+
 .license {
   font-size: $small-font-size;
   line-height: 1;

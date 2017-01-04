@@ -1,18 +1,35 @@
 @mixin gutterize {
-  margin-left: 1rem;
+  padding-left: 1rem;
   position: absolute;
-  left: $content-width;
+  left: $content-width - $gutter-width;
   width: $gutter-width;
   @content;
 }
 
+.centred {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.full-width {
+  width: 100%;
+  max-width: $content-width;
+}
+
+.half-width {
+  width: 100%;
+  max-width: $content-width / 2;
+}
+
 main {
+  @extend .centred, .full-width;
   margin-top: 2rem;
-  padding: 1rem;
+  // margin: 1rem;
   @include respond-to('screen') {
     section, article {
       position: relative;
-      width: $content-width;
+      width: $content-width - $gutter-width;
 
       aside {
         @include gutterize {
@@ -23,19 +40,8 @@ main {
   }
 }
 
-.centred {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .embedded-content {
   border: none;
-}
-
-.half-width {
-  width: 100%;
-  max-width: $content-width / 2;
 }
 
 .sixteen-by-nine {
