@@ -73,6 +73,7 @@
 main {
   @extend .guttered;
   margin-top: $profile-image-size + 30px;
+  margin-bottom: 100px;
 }
 
 .embedded-content {
