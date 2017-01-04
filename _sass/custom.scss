@@ -1,40 +1,6 @@
-$break-small: 760px;
-
-@mixin respond-to($media) {
-  @if $media == handhelds {
-    @media only screen and (max-width: $break-small) { @content; }
-  }
-  @else if $media == screen {
-    @media only screen and (min-width: $break-small + 1) { @content; }
-  }
-}
 
 img.unscaled {
   width: auto;
-}
-
-body {
-  margin: 0;
-}
-
-body > nav {
-  z-index: 999;
-  position: fixed;
-  left: 0;
-  right: 0;
-  background-color: $tufte-background;
-  padding-left: 12.5%;
-  font-style: italic;
-  box-shadow: 0 0 10px rgba(0,0,0,0.7);
-  & > * {
-    position: relative;
-  }
-  ul {
-    padding-left: 0;
-    li {
-      display: inline;
-    }
-  }
 }
 
 .sidebar {
@@ -52,33 +18,6 @@ body > nav {
       position: relative;
       width: 100%;
     }
-  }
-}
-
-#latestposts {
-  ul {
-    padding: 0;
-    list-style-type: none;
-    font-size: 1.1rem;
-    @include respond-to(screen) {
-    }
-    li {
-      @include respond-to(screen) {
-        display: inline;
-        &::after {
-          content: " ~"
-        }
-        &:last-of-type::after {
-          content: ''
-        }
-      }
-    }
-  }
-}
-#latestpostsposition::after {
-  content: 'above';
-  @include respond-to(screen) {
-    content: "to the right";
   }
 }
 
