@@ -130,3 +130,17 @@ blockquote {
   padding-bottom: 0.5rem;
   border-left: 2px solid $grey-color;
 }
+
+%list_indent {
+  list-style-position: outside;
+  padding-left: 2rem;
+}
+
+ul {
+  @extend %list_indent;
+  list-style-type: disc;
+}
+
+ol {
+  @extend %list_indent;
+}
