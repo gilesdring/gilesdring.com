@@ -26,3 +26,8 @@ main {
 iframe.spotify {
   margin: 1rem;
 }
+
+.sixteen-by-nine {
+  width: $content-width;
+  height: $content-width * 9 / 16;
+}
