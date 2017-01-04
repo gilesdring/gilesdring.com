@@ -1,0 +1,18 @@
+body {
+  background: $background-color;
+  & > nav {
+    background: $brand-color;
+    color: $background-color;
+    a, a:visited {
+      text-decoration: none;
+      color: darken($background-color, 10%);
+    }
+    a:hover {
+      color: $background-color;
+    }
+  }
+}
+
+a { color: $link-color; }
+a:visited { color: darken($link-color, 20%); }
+a:hover { color: lighten($link-color, 20%); }

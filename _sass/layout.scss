@@ -1,0 +1,23 @@
+@mixin gutterize {
+  margin-left: 1rem;
+  position: absolute;
+  left: $content-width;
+  width: $gutter-width;
+  @content;
+}
+
+main {
+  margin-top: 2rem;
+  @include respond-to('screen') {
+    section, article {
+      position: relative;
+      width: $content-width;
+
+      aside {
+        @include gutterize {
+          top: 2.25rem;
+        }
+      }
+    }
+  }
+}
