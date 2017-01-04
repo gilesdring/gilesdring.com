@@ -6,15 +6,34 @@
   @content;
 }
 
-.centred {
+@mixin centred {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.centred {
+  @include centred;
+}
+
+%padded {
+  margin-left: $min-padding;
+  margin-right: $min-padding;
+  @include respond-to('screen') {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .full-width {
   width: 100%;
   max-width: $content-width;
+  @include respond-to('screen') {
+    @include centred;
+  }
+  > section, > article {
+    @extend %padded;
+  }
 }
 
 .half-width {
@@ -22,22 +41,38 @@
   max-width: $content-width / 2;
 }
 
-main {
-  @extend .centred, .full-width;
+.guttered {
+  @extend .full-width;
   margin-top: 2rem;
+
   // margin: 1rem;
   @include respond-to('screen') {
-    section, article {
+    %with-gutter {
       position: relative;
       width: $content-width - $gutter-width;
+    }
 
+    > section {
+      @extend %with-gutter;
       aside {
         @include gutterize {
-          top: 2.25rem;
+          top: $h1-size * $base-line-height;
+        }
+      }
+    }
+    article {
+      @extend %with-gutter;
+      aside {
+        @include gutterize {
+          top: $h2-size * $base-line-height;
         }
       }
     }
   }
+}
+
+main {
+  @extend .guttered;
 }
 
 .embedded-content {

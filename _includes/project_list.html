@@ -1,8 +1,9 @@
 {% assign level = include.level | default: 2 %}
 {% for project in site.projects %}
-<h{{ level }}>{{ project.title }}</h{{ level }}>
-<aside class="sidebar">
-  <a href="{{ project.url }}">See more &xrarr;</a>
-</aside>
-{{ project.excerpt }}
+<article class='project'>
+  <h{{ level }}>{{ project.title }}</h{{ level }}>
+  {{ project.excerpt }}
+  <aside>
+    <a href="{{ project.url }}">See more &xrarr;</a></aside>
+</article>
 {% endfor %}

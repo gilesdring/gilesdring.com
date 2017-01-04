@@ -1,13 +1,15 @@
 <nav>
-  <section>
-    <h1>{{ site.title }}</h1>
-    <ul>
-      {% for link in site.data.nav %}
-      {% assign the_page = site.pages | where: "path",link.page | first %}
-      <li>
-        <a href="{{ the_page.url }}">{{ link.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
+  <div>
+    <section>
+      <h1>{{ site.title }}</h1>
+      <ul>
+        {% for link in site.data.nav %}
+        {% assign the_page = site.pages | where: "path",link.page | first %}
+        <li>
+          <a href="{{ the_page.url }}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>    
+  </div>
 </nav>
