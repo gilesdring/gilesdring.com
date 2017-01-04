@@ -8,6 +8,7 @@
 
 main {
   margin-top: 2rem;
+  padding: 1rem;
   @include respond-to('screen') {
     section, article {
       position: relative;
