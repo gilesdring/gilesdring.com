@@ -1,41 +1,82 @@
 @mixin gutterize {
-  margin-left: 1rem;
+  padding-left: 1rem;
   position: absolute;
-  left: $content-width;
+  left: $content-width - $gutter-width;
   width: $gutter-width;
   @content;
 }
 
-main {
-  margin-top: 2rem;
-  padding: 1rem;
-  @include respond-to('screen') {
-    section, article {
-      position: relative;
-      width: $content-width;
+@mixin centred {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.centred {
+  @include centred;
+}
+
+%padded {
+  margin-left: $min-padding;
+  margin-right: $min-padding;
+  @include respond-to('screen') {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.full-width {
+  width: 100%;
+  max-width: $content-width;
+  @include respond-to('screen') {
+    @include centred;
+  }
+  > section, > article {
+    @extend %padded;
+  }
+}
+
+.half-width {
+  width: 100%;
+  max-width: $content-width / 2;
+}
+
+.guttered {
+  @extend .full-width;
+
+  // margin: 1rem;
+  @include respond-to('screen') {
+    %with-gutter {
+      position: relative;
+      width: $content-width - $gutter-width;
+    }
+
+    > section {
+      @extend %with-gutter;
       aside {
         @include gutterize {
-          top: 2.25rem;
+          top: $h1-size * $base-line-height;
+        }
+      }
+    }
+    article {
+      @extend %with-gutter;
+      aside {
+        @include gutterize {
+          top: $h2-size * $base-line-height;
         }
       }
     }
   }
 }
 
-.centred {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+main {
+  @extend .guttered;
+  margin-top: $profile-image-size + 30px;
 }
 
 .embedded-content {
   border: none;
-}
-
-.half-width {
-  width: 100%;
-  max-width: $content-width / 2;
 }
 
 .sixteen-by-nine {

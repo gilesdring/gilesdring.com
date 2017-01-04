@@ -9,6 +9,8 @@ $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
+$h1-size:          1.5rem;
+$h2-size:          1.2rem;
 
 $strong-font-weight: 700;
 
@@ -26,8 +28,11 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 $gutter-width:     200px;
+$min-padding:      20px;
 
-$break-small:      $content-width + $gutter-width;
+$break-point:      $content-width + (2 * $min-padding);
+
+$profile-image-size: 80px;
 
 // Use media queries like this:
 // @include respond-to('screen') {
@@ -38,10 +43,10 @@ $break-small:      $content-width + $gutter-width;
 // }
 @mixin respond-to($media) {
   @if $media == handhelds {
-    @media only screen and (max-width: $break-small) { @content; }
+    @media only screen and (max-width: $break-point) { @content; }
   }
   @else if $media == screen {
-    @media only screen and (min-width: $break-small + 1) { @content; }
+    @media only screen and (min-width: $break-point + 1) { @content; }
   }
 }
 

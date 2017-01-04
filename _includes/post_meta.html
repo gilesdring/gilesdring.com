@@ -1,4 +1,5 @@
-Published on <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %B, %Y %H:%M'}}</time>.
+Published on <time class="dt-published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d %B, %Y %H:%M' | remove: ' 00:00'}}</time>.
+
 {% comment %}
-{% if post.tags.size > 0 %}Tagged with {{ post.tags }}{% endif %}
+{% if post.tags.size > 0 %}Tagged with {% for tag in post.tags %}<a href=''>{{tag}}</a>{% endfor %}{% endif %}
 {% endcomment %}
