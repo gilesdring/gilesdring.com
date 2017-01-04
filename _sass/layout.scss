@@ -23,9 +23,26 @@ main {
   }
 }
 
-iframe.spotify {
-  margin: 1rem;
+.centred {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.embedded-content {
+  border: none;
+}
+
+.spotify {
+  background-color: transparent;
+  height: 380px;
+}
+
+.half-width {
+  width: 100%;
+  max-width: $content-width / 2;
+}
+
 
 .sixteen-by-nine {
   width: $content-width;

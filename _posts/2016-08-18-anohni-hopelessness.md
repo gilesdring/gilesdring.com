@@ -31,7 +31,6 @@ album which I listened to a lot towards the end of last year.
 
 It's a strong start. Next up, Bat for Lashes. Let's see what she can muster.
 
-_Listen on Spotify:_
 {% include spotify_player.html uri='spotify:album:1S3OY2V2ZwFh4xU7gQG6IZ' %}
 
 
