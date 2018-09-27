@@ -1,46 +1,19 @@
-%shadow-box {
-  box-shadow: 0 5px 20px rgba(black, 0.2);
-}
-
-body > nav {
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  right: 0;
-  top: 0;
-  // @extend %shadow-box;
-  div {
-    @extend .full-width;
-    position: relative;
-    height: 3rem;
-    img {
-      width: $profile-image-size;
-      // @extend %shadow-box;
-      position: absolute;
-      top: 5px;
-      border-radius: 10px;
-      left: $min-padding;
-      @include respond-to('screen') {
-        left: 0;
+nav.top {
+  ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1em;
+    li {
+      padding-left: 0;
+      padding-right: 1em;
+      display: inline-block;
+      &:last-of-type {
+        padding-right: 0;
       }
-      @include respond-to(small-screen) {
-        top: 35px;
-        width: $profile-image-size * 0.8;
+      &.current {
+        font-weight: bolder;
       }
-    }
-    section {
-      padding-left: $profile-image-size + 5px;
-      display: flex;
-      align-items: center;
-      ul {
-        margin-left: 1rem;
-        li {
-          display: inline;
-        }
-      }
-      @include respond-to(small-screen) {
-        padding-left: 0;
-      };
     }
   }
 }
