@@ -1,16 +1,11 @@
-<nav>
-  <div>
-    <img src='{{ "/images/profile.jpg" | prepend: site.baseurl }}'/>
-    <section>
-      <h1>{{ site.title }}</h1>
-      <ul>
-        {% for link in site.data.nav %}
-        {% assign the_page = site.pages | where: "path",link.page | first %}
-        <li>
-          <a href="{{ the_page.url }}">{{ link.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
-  </div>
+{% assign containing_tag = "ol" %}
+<nav class="top">
+  <{{ containing_tag }}>
+    {% assign nav_pages = site.pages | where_exp: "item", "item.nav.order != null" | sort: "nav.order" %}
+    {% for p in nav_pages -%}
+    <li class="{% if page.title == p.title %}current{% endif %}">
+      <a href="{{ p.url | relative_url }}">{{ p.nav.title | default: p.title }}</a>
+    </li>
+    {%- endfor %}
+  </{{ containing_tag }}>
 </nav>
