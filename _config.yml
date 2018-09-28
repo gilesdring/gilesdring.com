@@ -23,6 +23,9 @@ markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page:num/"
 
+plugins:
+  - jekyll-redirect-from
+
 defaults:
   -
     scope:
@@ -34,4 +37,7 @@ defaults:
 collections:
   projects:
     output: true
+  redirects:
+    output: true
+
   # - music
