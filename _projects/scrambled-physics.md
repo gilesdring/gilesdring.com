@@ -14,8 +14,7 @@ It's called ScrambledPhysics, and you can
 [read more about it here]({{ page.project_sources }}).
 
 <canvas id="ScrambledPhysics" class="sketch"
-  data-processing-sources="{{ page.project_sources }}ScrambledPhysics.pde {{ page.project_sources }}Example.pde"
-  style="image-rendering: optimizequality ! important;" height="480" width="640" tabindex="0">
+  data-processing-sources="{{ page.project_sources }}ScrambledPhysics.pde {{ page.project_sources }}Example.pde" tabindex="0">
   <p>Your browser does not support the canvas tag.</p>
   <!-- Note: you can put any alternative content here. -->
 </canvas>
