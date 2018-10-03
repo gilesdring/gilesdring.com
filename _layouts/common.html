@@ -1,5 +1,7 @@
 ---
 layout: default
 ---
-{% include nav.html %}
-{{ content }}
+{%- include nav.html -%}
+<article{%-
+  if layout.class %} class="{{ layout.class }}"{%-
+  endif -%}>{{ content }}</article>

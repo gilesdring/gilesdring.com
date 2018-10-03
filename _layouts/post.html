@@ -1,10 +1,8 @@
 ---
 layout: common
+class: post
 ---
 {% assign post = page %}
-<article class='post'>
-  {{ content }}
-  <footer>
-    {% include post_meta.html %}
-  </footer>
-</article>
+<header><h1>{{ page.title }}</h1></header>
+{{ content }}
+<footer>{% include post_meta.html %}</footer>
