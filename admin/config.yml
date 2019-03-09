@@ -2,7 +2,7 @@ backend:
   name: github
   repo: gilesdring/gilesdring.github.io
   branch: master
-  site_domain: priceless-cori-c58972.netlify.com
+  site_domain: gilesdring.com
 
 media_folder: "images/uploads"
 
