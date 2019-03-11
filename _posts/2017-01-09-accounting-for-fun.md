@@ -1,4 +1,6 @@
 ---
+title: Accounting for fun
+date: 2017-01-09
 tags:
   - reflection
 ---

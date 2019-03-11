@@ -2,6 +2,7 @@
 layout: post
 title: 'The best-laid schemes o'' mice an'' men / Gang aft agley: Second day back
   reflection'
+date: 2014-09-16
 categories:
 - skills
 tags:

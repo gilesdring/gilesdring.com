@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The week ahead...
+date: 2014-09-22
 categories: []
 tags: []
 status: publish

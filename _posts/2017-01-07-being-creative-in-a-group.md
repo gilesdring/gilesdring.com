@@ -1,4 +1,6 @@
 ---
+title: Being creative in a group
+date: 2017-01-07
 tags:
   - self-improvement
   - music

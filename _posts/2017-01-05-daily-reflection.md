@@ -1,4 +1,6 @@
 ---
+title: Daily reflection
+date: 2017-01-05
 tags:
   - diary
 ---

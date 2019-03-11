@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Signing off for Christmas
+date: 2015-12-22
 categories: []
 tags: []
 status: publish

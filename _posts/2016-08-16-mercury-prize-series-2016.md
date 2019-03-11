@@ -1,4 +1,6 @@
 ---
+title: Mercury prize series 2016
+date: 2016-08-16
 tags:
   - mercury-2016
   - review

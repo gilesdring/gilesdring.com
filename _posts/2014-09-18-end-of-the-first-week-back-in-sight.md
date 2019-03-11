@@ -1,6 +1,7 @@
 ---
 layout: post
 title: End of the first week back in sight!
+date: 2014-09-18
 categories: []
 tags: []
 status: publish
