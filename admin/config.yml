@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: gilesdring/gilesdring.github.io
-  base_url: https://kltfd8s7m9.execute-api.eu-west-2.amazonaws.com
+  base_url: https://j5do03xkk8.execute-api.eu-west-2.amazonaws.com
   auth_endpoint: prod/auth  
 
 media_folder: "images/uploads"
