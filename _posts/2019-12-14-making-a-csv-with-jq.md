@@ -3,7 +3,10 @@ layout: post
 title: Making a CSV with jq
 date: 2019-12-14T08:15:21.270Z
 tags:
-  - hint tech tool jq
+  - hint
+  - tech
+  - tool
+  - jq
 ---
 I’m finding [jq](https://stedolan.github.io/jq/) to be a really useful tool for dealing with JSON formatted data.
 
