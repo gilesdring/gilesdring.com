@@ -4,17 +4,25 @@ backend:
   base_url: https://j5do03xkk8.execute-api.eu-west-2.amazonaws.com
   auth_endpoint: prod/auth  
 
-media_folder: "images/uploads"
+media_folder: images/uploads
 
 collections:
-  - name: "posts" # Used in routes, e.g., /admin/collections/blog
-    label: "Posts" # Used in the UI
-    folder: "_posts/" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: posts
+    description: Blog posts
+    label: Posts
+    label_singular: Post
+    folder: _posts/
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{year}}-{{month}}-{{day}}_{{title}}"
+    fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "date", dateFormat": "YYYY-MM-DD"}
+      - label: Publish Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DD HH:mm:ss Z"
+        dateFormat: LL
+        timeFormat: "HH:mm"
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
