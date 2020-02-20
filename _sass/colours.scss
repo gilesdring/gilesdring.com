@@ -3,13 +3,6 @@ $site-hue: 190;
 $site-colour: hsl($site-hue, 75%, 80%);
 
 $page-background:
-  linear-gradient(
-    to right,
-    hsla($site-hue, 75%, 50%, 30%) 0,
-    hsla($site-hue, 75%, 50%, 30%) 15em,
-    hsla($site-hue, 75%, 100%, 100%) 30em
-  )
-  ,
   url($bg-image)
   ;
 

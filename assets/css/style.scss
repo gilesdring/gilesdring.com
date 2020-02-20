@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-$bg-image: "{{ '/assets/images/arches.png' | relative_url }}";
+$bg-image: "{{ '/assets/images/arches-trans.png' | relative_url }}";
 
 @import "{{ site.theme }}",
         "colours",
