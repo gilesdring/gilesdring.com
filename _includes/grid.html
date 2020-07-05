@@ -1,0 +1,5 @@
+<li class="grid">
+    {% for item in include.items %}
+        {% include grid_templates/{{ include.template }}.html %}
+    {% endfor %}
+</li>

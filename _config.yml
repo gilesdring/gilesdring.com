@@ -47,5 +47,7 @@ collections:
     output: true
   redirects:
     output: true
+  inspirations:
+    output: false
 
   # - music
