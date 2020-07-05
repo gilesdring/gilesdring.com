@@ -1,12 +1,12 @@
 $site-hue: 190;
 
-$site-colour: hsl($site-hue, 75%, 80%);
+$page-bg-colour: hsl($site-hue, 10%, 80%);
 
-$page-background:
+$page-bg-image:
   url($bg-image)
   ;
 
 body {
-  background-color: $site-colour;
-  background-image: $page-background;
+  background-color: $page-bg-colour;
+  background-image: $page-bg-image;
 }
