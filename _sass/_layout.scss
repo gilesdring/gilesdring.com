@@ -1,0 +1,21 @@
+%centred {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    > * {
+        @extend %centred;
+    }
+
+    > header {
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5em;
+    padding-bottom: 0.5em;   
+}

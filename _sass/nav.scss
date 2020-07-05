@@ -1,18 +1,11 @@
 nav.top {
   ol {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 1em;
+    display: flex;
     li {
-      padding-left: 0;
-      padding-right: 1em;
-      display: inline-block;
-      &:last-of-type {
-        padding-right: 0;
-      }
+      padding-left: 1em;
       &.current {
-        font-weight: bolder;
+        text-decoration: underline;
       }
     }
   }

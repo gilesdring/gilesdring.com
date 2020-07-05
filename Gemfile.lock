@@ -243,6 +243,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-remote-theme
 
 RUBY VERSION
    ruby 2.5.3p105

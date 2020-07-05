@@ -1,11 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Raleway&display=swap');
 
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Dosis', sans-serif;
   font-weight: 200;
+}
+
+$sizes: (
+  h1: 1.5em,
+  h2: 1.3em,
+  h3: 1.2em,
+);
+
+@each $selector, $size in $sizes {
+  #{$selector} {
+    font-size: $size;
+  }
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
