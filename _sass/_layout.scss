@@ -2,6 +2,8 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 body {
@@ -12,6 +14,9 @@ body {
     > header {
         display: flex;
         align-items: baseline;
+    }
+    @include small-screen() {
+        padding-bottom: 3em;
     }
 }
 

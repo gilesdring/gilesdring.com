@@ -1,9 +1,28 @@
 nav.top {
+  overflow-x: scroll;
+  @include small-screen() {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0.5em 0.5em 0 0;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+    color: $dark-contrast;
+    background: $dark;
+    a {
+      color: inherit;
+    }      
+  }
   ol {
     list-style-type: none;
     display: flex;
     li {
-      padding-left: 1em;
+      @include large-screen() {
+        padding-left: 1em;
+      }
+      @include small-screen() {
+        margin: 1em;
+      }
       &.current {
         text-decoration: underline;
       }

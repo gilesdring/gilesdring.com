@@ -1,12 +1,13 @@
 .tag-cloud {
+  overflow-x: scroll;
   display: flex;
   font-size: 0.8em;
   > li {
-    color: white;
+    color: $dark-contrast;
     a {
       color: inherit;
     }
-    background: black;
+    background: $dark;
     padding: 0.5em 1em;
     border-radius: 1em;
     margin-right: 0.5em;

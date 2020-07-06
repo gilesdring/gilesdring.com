@@ -1,5 +1,8 @@
 $site-hue: 190;
 
+$dark: hsl(229, 47%, 22%);
+$dark-contrast: invert($dark);
+
 $page-bg-colour: hsl($site-hue, 10%, 80%);
 
 $page-bg-image:
