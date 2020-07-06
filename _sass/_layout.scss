@@ -13,7 +13,14 @@ body {
 
     > header {
         display: flex;
-        align-items: baseline;
+        align-items: center;
+        justify-content: space-between;
+        h1 a {
+            display: flex;
+            padding: 0;
+            line-height: initial;
+            align-items: center;
+        }
     }
     @include small-screen() {
         padding-bottom: 3em;
