@@ -21,6 +21,13 @@ body {
             line-height: initial;
             align-items: center;
         }
+        svg {
+            height: 3em;
+        }
+        div {
+            word-wrap: break-word;
+            max-width: 5rem;
+        }
     }
     @include small-screen() {
         padding-bottom: 3em;
