@@ -8,6 +8,7 @@ $grid-size: 10rem;
         background-size: cover;
         background-position: center;
         margin-right: 1em;
+        margin-bottom: 1em;
         padding: 0;
         > a {
             margin: 1em;
@@ -25,5 +26,11 @@ $grid-size: 10rem;
                 background-color: hsla(0, 0, 0, 0.5);
             }
         }
+    }
+}
+
+.grid {
+    .solid-block {
+        @extend %transparent-block;
     }
 }
