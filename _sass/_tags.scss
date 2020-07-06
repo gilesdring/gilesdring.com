@@ -1,0 +1,14 @@
+.tag-cloud {
+  display: flex;
+  font-size: 0.8em;
+  > li {
+    color: white;
+    a {
+      color: inherit;
+    }
+    background: black;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    margin-right: 0.5em;
+  }
+}
