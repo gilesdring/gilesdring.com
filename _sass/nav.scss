@@ -17,10 +17,10 @@ nav.top {
     list-style-type: none;
     display: flex;
     li {
-      padding-top: 1em;
-      padding-bottom: 1em;
       @include large-screen() {
         padding-left: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
       }
       @include small-screen() {
         margin: 1em;
