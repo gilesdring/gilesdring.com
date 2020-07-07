@@ -9,7 +9,7 @@ tags:
 ---
 
 My first [Sofa to So Far](https://www.runningpunks.com/) run, and I'm sticking with the spirit by listening to one of
-the most inflential bands that no-one has ever heard. Listen to Pink Flag, and you can hear 1980s US Hardcore. Not to 
+the most inflential bands that no-one has ever heard. Listen to Pink Flag, and you can hear 1980s US Hardcore (not to 
 mention 1990s Elastica). They were and are vehemently not a punk band. What they did, and did brilliantly, is took the
 sounds and textures and excitement of punk music and used it as a tool to craft minimalist masterpieces.
 
