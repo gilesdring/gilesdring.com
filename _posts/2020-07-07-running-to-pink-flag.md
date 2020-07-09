@@ -6,6 +6,8 @@ tags:
   - wire
   - punk
   - music
+  - sofa to so far
+
 ---
 
 My first [Sofa to So Far](https://www.runningpunks.com/) run, and I'm sticking with the spirit by listening to one of
