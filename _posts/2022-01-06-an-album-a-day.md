@@ -6,7 +6,7 @@ tags:
     - reflections
 ---
 
-1st January 2021. It seems like an awfully long time ago. Much has happened, and equally much has not happened. I remember distinctly where I was on January 1st -- standing in my kitchen, washing up and listening to Beauty Pill's amazing album [_Beauty Pill Describes Things As They Are_][BPDTATA]. I resolved, there and then, to listen to a different album a day during January, in part as a way of broadening my horizons and in part to have a project. I am keen on a project, as demonstrated by 2020's recreation of various popular hits on some of my mini synth collection.
+1st January 2021. It seems like an awfully long time ago. Much has happened, and equally much has not happened. I remember distinctly where I was on January 1st -- standing in my kitchen, washing up and listening to Beauty Pill's amazing album [_Beauty Pill Describes Things As They Are_][BPDTATA]. I resolved, there and then, to listen to a different album a day during January, in part as a way of broadening my horizons and in part to have a project. I am keen on a project, as demonstrated by 2020's [recreation of various popular hits on some of my mini synth collection][CONDENSED_MIXES].
 
 Somehow, during January, this mutated in not just the month but the entire year. I told everyone that I'd see how long this lasted, and I wasn't going to beat myself up if I didn't manage to complete this.
 
@@ -38,6 +38,7 @@ In the meantime, if you fancy a listen, here is my pick of songs from the albums
 There's also a [version of this on Spotify][AAAD_SPOTIFY].
 
 [BPDTATA]: https://beautypill.bandcamp.com/album/describes-things-as-they-are
+[CONDENSED_MIXES]: https://youtube.com/playlist?list=PLe-JXOO-cW37A2mOzTgkKqPkaNgG_rfS3
 [THEWIRE]: https://www.thewire.co.uk/
 [AOTY_NR]: https://www.albumoftheyear.org/releases/
 [AOTY_2021]: https://www.albumoftheyear.org/list/summary/2021/
