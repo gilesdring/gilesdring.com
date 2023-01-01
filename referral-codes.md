@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: layouts/page.njk
 ---
 
 I use some services that give you (and me!) money off. Take a look at these referral codes.

@@ -1,0 +1,20 @@
+---
+layout: layouts/page.njk
+title:  Blog
+url: /blog/
+nav:
+  order: 2
+---
+<article>
+  {% for post in paginator.posts %}
+    {% include post_excerpt.html %}
+  {% endfor %}
+
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}">Previous</a>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}">Next</a>
+  {% endif %}
+</article>

@@ -1,0 +1,28 @@
+---
+layout: layouts/common.njk
+title: Giles Dring
+---
+
+<section>
+  <header>
+    <h1><a href="/blog/">Blog</a></h1>
+  </header>
+  <ol class="grid">
+    {% for post in search.pages("blog", "date=desc", 3) | data %}
+      <li class="solid-block"><a href="{{ post.url }}">{{ post.title | safe }}</a></li>
+    {% endfor %}
+  </ol>
+</section>
+
+<section>
+  <header>
+    <h1>Projects</h1>
+  </header>
+
+  <p>
+    Here is a small selection of personal projects.
+  </p>
+
+  {%- include "project_list.njk" -%}
+
+</section>

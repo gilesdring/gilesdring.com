@@ -1,0 +1,8 @@
+{% set level = include.level or 2 %}
+{% for project in site.projects -%}
+<article class='project'>
+  <header><h{{ level }}>{{ project.title }}</h{{ level }}></header>
+  {{ project.excerpt }}
+  <footer><a href="{{ project.url }}">See more &xrarr;</a></footer>
+</article>
+{%- endfor -%}

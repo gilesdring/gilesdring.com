@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+<header>
+  {% include "header.njk" -%}
+</header>
+<section role="main">
+  {{ content | safe }}
+</section>
+<footer>
+  {% include "footer.njk" -%}
+</footer>

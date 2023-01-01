@@ -1,7 +1,7 @@
 ---
 ---
 
-$bg-image: "{{ '/assets/images/arches-trans.png' | relative_url }}";
-$site-logo: "{{ '/assets/images/sad-viking.svg' | relative_url }}";
+$bg-image: "/assets/images/arches-trans.png";
+$site-logo: "/assets/images/sad-viking.svg";
 
-@import 'reset', 'style';
+@import 'sass/reset', 'sass/style';

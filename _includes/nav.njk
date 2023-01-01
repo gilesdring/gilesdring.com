@@ -1,0 +1,11 @@
+{% set containing_tag = "ol" %}
+{% set nav_pages = search.pages("nav.order!=undefined", "nav.order") | data %}
+<nav class="top">
+  <{{ containing_tag }}>
+    {% for p in nav_pages -%}
+    <li class="{% if url == p.url %}current{% endif %}">
+      <a href="{{ p.url }}">{{ p.nav.title or p.title }}</a>
+    </li>
+    {%- endfor %}
+  </{{ containing_tag }}>
+</nav>
