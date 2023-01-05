@@ -1,5 +1,4 @@
 nav.top {
-  overflow-x: scroll;
   @include small-screen() {
     position: fixed;
     left: 0;

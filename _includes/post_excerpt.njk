@@ -1,0 +1,11 @@
+{% set level = include.level or 2 %}
+<article class='excerpt'>
+  <header>
+    <h{{ level }}><a href='{{post.data.url}}'>{{ post.data.title | safe }}</a></h{{ level }}>
+  </header>
+  {{ post.data.excerpt }}
+  <a href="{{ post.data.url }}">Read More &xrarr;</a>
+  <footer>
+    {% include "post_meta.njk" %}
+  </footer>
+</article>

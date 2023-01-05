@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Toys
 categories: []
 tags: []
@@ -7,6 +6,10 @@ status: publish
 type: page
 published: true
 meta: {}
+description: |
+  From time to time I create something useful for a specific purpose.
+  These often find repeated use, and I'm sharing them here in case they are of
+  interest to you. 
 ---
 From time to time I create something useful for a specific purpose.
 These often find repeated use, and I'm sharing them here in case they are of

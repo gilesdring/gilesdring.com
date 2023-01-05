@@ -1,8 +1,8 @@
 {% set level = include.level or 2 %}
-{% for project in site.projects -%}
+{% for project in search.pages('project') | data -%}
 <article class='project'>
   <header><h{{ level }}>{{ project.title }}</h{{ level }}></header>
-  {{ project.excerpt }}
+  {{ project.description }}
   <footer><a href="{{ project.url }}">See more &xrarr;</a></footer>
 </article>
 {%- endfor -%}

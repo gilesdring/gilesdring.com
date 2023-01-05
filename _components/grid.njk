@@ -1,0 +1,5 @@
+<ol class="grid">
+  {% for item in items %}
+    {{ comp.grid_templates[template]({ item: item }) | safe }}
+  {% endfor %}
+</ol>
