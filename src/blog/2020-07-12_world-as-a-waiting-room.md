@@ -4,7 +4,8 @@ bandcamp:
   id: 2141843020
   link: http://radiomilkrecords.com/album/world-as-a-waiting-room
   title: World As A Waiting Room by White Denim
-strava_link: https://www.strava.com/activities/3749506834/embed/279092a8ebb356bf1e5c839c8894f3491987043b
+embed:
+  strava: https://www.strava.com/activities/3749506834/embed/279092a8ebb356bf1e5c839c8894f3491987043b
 tags:
   - running
   - white denim
@@ -22,4 +23,4 @@ The tunes today came from White Denim. Great driving rhythms. It's one of their 
 all recorded on lockdown. They're still one of the best live acts I've ever seen, or are ever likely to see.
 I just grinned for the whole set.
 
-{% include embeds/strava.html uri=page.strava_link %}
+{{ comp.embed.Strava({ page }) }}

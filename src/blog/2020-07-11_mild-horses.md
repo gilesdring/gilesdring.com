@@ -1,7 +1,8 @@
 ---
 title: Mild Horses
 bandcamp_id: 154568365
-strava_link: https://www.strava.com/activities/3744615599/embed/2a7328740726550c13d629e2ef14756239e3ac8c
+embed:
+  strava: https://www.strava.com/activities/3744615599/embed/2a7328740726550c13d629e2ef14756239e3ac8c
 tags:
   - running
   - sauna youth
@@ -28,4 +29,4 @@ Love it...
 
 Not a stellar performance, but I enjoyed it!
 
-{% include embeds/strava.html uri=page.strava_link %}
+{{ comp.embed.Strava({ page }) }}

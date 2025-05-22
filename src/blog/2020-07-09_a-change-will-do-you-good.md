@@ -1,7 +1,8 @@
 ---
 title: A Change Will Do You Good
-spotify_uri: spotify:album:1UMvR1rwj9EzLnbj4L6Zoy
-strava_link: https://www.strava.com/activities/3734975356/embed/f870f1f5f6f6d5de1344cad7a9d1a2c5951e04cd
+embed:
+  spotify: spotify:album:1UMvR1rwj9EzLnbj4L6Zoy
+  strava: https://www.strava.com/activities/3734975356/embed/f870f1f5f6f6d5de1344cad7a9d1a2c5951e04cd
 tags:
   - running
   - gang of four
@@ -14,7 +15,7 @@ Second run of Sofa To So Far, and this time I was accompanied by Gang of Four.
 More mid-tempo stuff, but with some aggression this time. I reckon I need to put
 together a running punk playlist.<!-- more -->
 
-{% include embeds/spotify.html uri=page.spotify_uri %}
+{{ comp.embed.Spotify({ page }) }}
 
 Sore quads from Tuesday's run, but managed to run for the first 10 mimutes with few problems.
 I worked quite hard on 'easy running', having had a chat with Jimmy about this.
@@ -27,6 +28,6 @@ This felt quite similar.
 On the evidence of today --- slow pace indistinguishable from fast pace --- I'll need to learn similar
 lessons related to running.
 
-{% include embeds/strava.html uri=page.strava_link %}
+{{ comp.embed.Strava({ page }) }}
 
 Another rest day tomorrow.

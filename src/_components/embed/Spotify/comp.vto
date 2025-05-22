@@ -1,0 +1,12 @@
+{{> 
+    const uri = (link || page.data.embed.spotify).split(":");
+    const src = `https://open.spotify.com/embed/${ uri[1] }/${ uri[2] }`;
+}}
+
+<iframe
+  class="spotify{{ if compact }} compact{{ /if }}"
+  src="{{ src }}"
+  frameborder="0"
+  allowtransparency="true"
+  allow="encrypted-media">
+</iframe>

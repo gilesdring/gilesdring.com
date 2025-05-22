@@ -1,5 +1,7 @@
 ---
 title: So Far So Good
+embed:
+  spotify: spotify:playlist:0HWUkEyHOAZi215wOcILnC
 tags:
   - running
   - playlist
@@ -17,6 +19,6 @@ I didn’t smash my 5k best. That was set about 2 minutes faster when I ran with
 
 Today I was accompanied by a playlist which definitely helped with the pacing. Particularly the Pelican track.
 
-{% include embeds/spotify.html uri='spotify:playlist:0HWUkEyHOAZi215wOcILnC' %}
+{{ comp.embed.Spotify({ page }) }}
 
 So where next? I reckon I’m going back to the start and doing it all again, but this time straying from the canal towpath and hitting some of the hilly trails near my home. Using the gradual increase to build some more stamina sounds like a good idea. Wish me luck!
