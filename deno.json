@@ -14,5 +14,17 @@
     "types": [
       "lume/types.ts"
     ]
+  },
+  "deploy": {
+    "project": "f7946455-02a5-45de-921b-1a28b7f80c6d",
+    "exclude": [
+      "**/node_modules"
+    ],
+    "include": [
+      "_site",
+      "serve.ts",
+      "deno.json"
+    ],
+    "entrypoint": "serve.ts"
   }
 }
