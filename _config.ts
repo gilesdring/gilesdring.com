@@ -37,7 +37,8 @@ site.use(postcss());
 
 site.add('assets/style.css');
 
-site.copy("assets/images");
+site.add('assets/images');
+
 site.copy([".html"]);
 
 site.copy('vallers2013/');
