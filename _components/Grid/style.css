@@ -8,9 +8,17 @@
     align-items: stretch;
     padding: 0;
     > * {
-        padding: 0;
+        padding: 0.5em;
         aspect-ratio: 1/1;
         flex-basis: var(--grid-size);
+    }
+    a {
+        > *:first-child {
+            margin-block-start: 0;
+        }
+        > *:last-child {
+            margin-block-end: 0;
+        }
     }
     li {
         list-style: none;
@@ -19,6 +27,8 @@
         color: white;
         background-color: hsl(229, 47%, 22%, 50%);
         backdrop-filter: blur(2px);
-        a { color: inherit; }
+        a {
+            color: currentColor;
+        }
     }
 }
