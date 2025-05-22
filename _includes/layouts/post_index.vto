@@ -3,7 +3,7 @@ layout: layouts/page.njk
 title:  Writing
 ---
 
-{{ include "partial/pagination.vto" }}
+{{ comp.pagination.Navigator({ pagination }) }}
 <hr>
 
 {{ for post of results }}
@@ -11,4 +11,4 @@ title:  Writing
   <hr>
 {{ /for }}
 
-{{ include "partial/pagination.vto" }}
+{{ comp.pagination.Navigator({ pagination }) }}

@@ -1,0 +1,11 @@
+nav.pagination {
+    display: flex;
+    gap: 1ch;
+    a[disabled] {
+        visibility: hidden;
+    }
+    .page_number {
+        flex-grow: 1;
+        text-align: center;
+    }
+}
