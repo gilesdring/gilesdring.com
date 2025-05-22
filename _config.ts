@@ -41,6 +41,8 @@ site.add('assets/images');
 
 site.copy([".html"]);
 
+// Copy over old projects
 site.copy('vallers2013/');
+site.copy('spinner/');
 
 export default site;
