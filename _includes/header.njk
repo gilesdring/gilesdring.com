@@ -5,4 +5,4 @@
   </a>
 </h1>
 
-{%- include "nav.njk" -%}
+{{ comp.Nav() | await | safe }}

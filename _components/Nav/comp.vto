@@ -1,0 +1,9 @@
+<nav class="site">
+  <{{ containing_tag || "ol" }}>
+    {{ for p of search.pages("nav.order!=undefined", "nav.order") }}
+    <li class="{{ if url == p.url }}current{{ /if }}">
+      <a href="{{ p.url }}">{{ p.nav.title || p.title }}</a>
+    </li>
+    {{ /for }}
+  </{{ containing_tag || "ol" }}>
+</nav>
