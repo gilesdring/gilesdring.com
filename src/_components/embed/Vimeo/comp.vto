@@ -1,0 +1,13 @@
+<iframe
+  src="https://player.vimeo.com/video/{{ id }}"
+  class="sixteen-by-nine embedded-content"
+  allowfullscreen>
+</iframe>
+
+{{ if author && title }}
+<p>
+  <a href="https://vimeo.com/{{ id }}">{{ title }}</a>
+  from <a href="https://vimeo.com/{{ author }}">{{ author }}</a>
+  on <a href="https://vimeo.com">Vimeo</a>.
+</p>
+{{ /if }}

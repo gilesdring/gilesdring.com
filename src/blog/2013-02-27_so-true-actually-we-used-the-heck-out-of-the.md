@@ -11,7 +11,7 @@ published: true
 meta: {}
 ---
 
-{% include services/youtube.html youtube_id='YAtB2zSLly8' %}
+{{ comp.embed.YouTube({ id: 'YAtB2zSLly8' }) }}
 
 <p>
   Actually, we used the heck out of the Harvey Karp book, and it seemed to

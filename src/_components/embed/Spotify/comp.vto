@@ -1,6 +1,6 @@
 {{> 
-    const uri = (link || page.data.embed.spotify).split(":");
-    const src = `https://open.spotify.com/embed/${ uri[1] }/${ uri[2] }`;
+    const uriParts = (uri || page.data.embed.spotify).split(":");
+    const src = `https://open.spotify.com/embed/${ uriParts[1] }/${ uriParts[2] }`;
 }}
 
 <iframe

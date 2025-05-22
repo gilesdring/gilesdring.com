@@ -15,9 +15,9 @@ meta: {}
 <li>how good a presentation it is;<br>
 </li>
 <li>how bad most of the other presentations I'm subjected to are</li>
-</ol>
+</ol><!-- more -->
 <p>
   Do me a favour and watch it, internalise it and make better presentations. (I mean, obviously, not you - everyone else...)
 </p>
 
-{% include services/vimeo.html vimeo_id='63940142' title='Rethinking The Presentation' author='iandsmith' %}
+{{ comp.embed.Vimeo({ id: '63940142', title: 'Rethinking The Presentation', author: 'iandsmith' }) }}

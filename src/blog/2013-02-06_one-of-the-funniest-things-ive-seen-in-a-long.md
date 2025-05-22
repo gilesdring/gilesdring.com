@@ -15,6 +15,7 @@ type: post
 published: true
 meta: {}
 ---
-{% include services/youtube.html youtube_id='9FMjCB5-xw8' %}
+
+{{ comp.embed.YouTube({ id: '9FMjCB5-xw8' }) }}
 
 <p>One of the funniest things I’ve seen in a long while. Perfectly paced.</p>

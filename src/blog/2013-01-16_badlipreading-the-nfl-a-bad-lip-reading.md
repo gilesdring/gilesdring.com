@@ -11,6 +11,7 @@ published: true
 meta: {}
 ---
 <p>Just weird, but oddly compelling...</p>
-{% include services/youtube.html youtube_id='Zce-QT7MGSE' %}
+
+{{ comp.embed.YouTube({ id: 'Zce-QT7MGSE' }) }}
 
 <p>via <a href="http://badlipreading.tumblr.com/post/40628383839">badlipreading</a></p>

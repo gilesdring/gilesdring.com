@@ -20,4 +20,4 @@ meta:
   amount of mixing/mastering. Just sublime.
 </p>
 
-{% include services/spotify.html uri='spotify:album:2my0OPvoyguMaxMJPPINeV' cover=true %}
+{{ comp.embed.Spotify({ uri: 'spotify:album:2my0OPvoyguMaxMJPPINeV' }) }}

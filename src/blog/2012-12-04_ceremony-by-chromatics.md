@@ -2,7 +2,8 @@
 title: 'Chromatics &mdash; <em>Ceremony</em>'
 categories:
 - music
-tags: []
+tags:
+  - link
 status: publish
 type: post
 published: true

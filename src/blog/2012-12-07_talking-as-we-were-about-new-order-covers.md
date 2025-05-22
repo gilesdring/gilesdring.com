@@ -3,6 +3,7 @@ title: 'Buke and Gase &mdash; <em>Blue Monday</em>'
 categories:
 - music
 tags:
+- link
 - SoundCloud
 - Brassland
 - Alternative Rock

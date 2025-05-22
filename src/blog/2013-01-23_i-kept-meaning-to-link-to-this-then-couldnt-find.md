@@ -16,7 +16,7 @@ published: true
 meta: {}
 ---
 
-{% include services/youtube.html youtube_id='IFe9wiDfb0E' %}
+{{ comp.embed.YouTube({ id: 'IFe9wiDfb0E' }) }}
 
 <p>
   I kept meaning to link to this, then couldn’t find it, then did again, and
