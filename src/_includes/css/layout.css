@@ -6,10 +6,13 @@
     padding-right: 1em;
 }
 
-body > * {
-    max-width: 800px;
-    margin-inline: auto;
-    padding-inline: 1rem;
+body {
+    padding-bottom: 7rem;
+    > * {
+        max-width: 800px;
+        margin-inline: auto;
+        padding-inline: 1rem;
+    }
 }
 
 p, h1, h2, h3, h4, h5, h6 {
