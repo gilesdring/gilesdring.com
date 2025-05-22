@@ -9,6 +9,7 @@ import postcss from "lume/plugins/postcss.ts";
 
 const site = lume({
   src: './src',
+  location: new URL('https://gilesdring.com/'),
 });
 
 site.preprocess(['.md'], (pages) => {
