@@ -1,5 +1,5 @@
 export const layout = "layouts/post_index.vto";
-export const title = "Blog";
+export const title = "Writing";
 // export const renderOrder = 1;
 
 export default function* ({ search, paginate }) {
