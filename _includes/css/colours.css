@@ -8,6 +8,7 @@
 
 body {
   background-color: var(--page-bg-colour);
+  background-attachment: fixed;
   background-image: var(--page-bg-image);
 }
 

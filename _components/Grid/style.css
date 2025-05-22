@@ -15,4 +15,10 @@
     li {
         list-style: none;
     }
+    .solid-block {
+        color: white;
+        background-color: hsl(229, 47%, 22%, 50%);
+        backdrop-filter: blur(2px);
+        a { color: inherit; }
+    }
 }
