@@ -4,7 +4,7 @@ title: First proper day back
 categories:
 - skills
 tags:
-- back to work
+- back-to-work
 - look ahead
 - podcasts
 - design

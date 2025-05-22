@@ -4,7 +4,7 @@ title: Wednesday already?
 categories:
 - skills
 tags:
-- back to work
+- back-to-work
 - daily plan
 - metric
 status: publish

@@ -3,8 +3,8 @@ title: ATP Shellac of North America
 categories:
 - music
 tags:
-- ATP
-- Festival
+- all-tomorrows-parties
+- festival
 status: publish
 type: post
 published: true

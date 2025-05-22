@@ -6,7 +6,7 @@ categories:
 tags:
 - daily plan
 - focus
-- back to work
+- back-to-work
 - coding
 status: publish
 type: post

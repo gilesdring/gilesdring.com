@@ -4,7 +4,7 @@ date: 2012-11-30
 categories:
 - music
 tags:
-- ATP
+- all-tomorrows-parties
 - festival
 status: publish
 type: post

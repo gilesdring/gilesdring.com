@@ -4,7 +4,7 @@ title: Soundtrack to the end of the world
 categories:
 - music
 tags:
-- atp
+- all-tomorrows-parties
 - mixtape
 - recommendations
 status: publish

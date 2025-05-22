@@ -4,7 +4,7 @@ title: 'First day back: reflections'
 categories:
 - skills
 tags:
-- back to work
+- back-to-work
 - reflection
 - ham to spam
 - meeting planning
