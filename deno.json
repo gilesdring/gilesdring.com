@@ -7,6 +7,9 @@
     "build": "deno task lume",
     "serve": "deno task lume -s"
   },
+  "unstable": [
+    "temporal"
+  ],
   "compilerOptions": {
     "types": [
       "lume/types.ts"
