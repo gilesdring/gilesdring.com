@@ -15,7 +15,8 @@ published: true
 meta: {}
 ---
 
-{% include services/soundcloud.html soundcloud_track='54740779' %}
+{{ comp.embed.Soundcloud({ track: '54740779' })}}
+
 <p>
   Talking, as we were, about New Order covers, here’s one by my current
   musical crush, <a href="http://www.bukeandgase.com/">Buke &amp; Gase</a>.
