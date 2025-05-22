@@ -11,6 +11,7 @@
         padding: 0.5em;
         aspect-ratio: 1/1;
         flex-basis: var(--grid-size);
+        flex-grow: 1;
     }
     a {
         > *:first-child {

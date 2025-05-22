@@ -24,12 +24,12 @@ title: Welcome
     Here is a small selection of personal projects.
   </p>
 
-  <div class="grid">
-  {{ for project of search.pages('project !catalogue') -}}
-  {{ comp Card }}
-  {{ comp.Excerpt({ ...project }) }}
+  {{ comp Grid }}
+    {{ for project of search.pages('project !catalogue') -}}
+      {{ comp Card }}
+        {{ comp.Excerpt({ ...project }) }}
+      {{ /comp }}
+    {{ /for }}
   {{ /comp }}
-  {{ /for }}
-  </div>
 
 </section>

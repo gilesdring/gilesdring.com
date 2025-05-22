@@ -4,7 +4,7 @@ title: Links
 nav:
   order: 50
 ---
-{{ comp Grid }}
+{{ comp Grid { tag: "ol" } }}
   {{ for link of links }}
     {{ comp.Link({ ...link }) }}
   {{ /for }}
