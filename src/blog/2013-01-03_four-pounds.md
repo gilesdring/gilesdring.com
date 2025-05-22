@@ -1,7 +1,9 @@
 ---
 
 title: Four Pounds
-categories: []
+categories:
+- thought-rack
+- random-idea-spike
 tags: []
 status: publish
 type: post

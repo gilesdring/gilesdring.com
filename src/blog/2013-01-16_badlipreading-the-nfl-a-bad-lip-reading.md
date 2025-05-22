@@ -1,7 +1,9 @@
 ---
 
 title: Bad Lip Reading - The NFL
-categories: []
+categories:
+- thought-rack
+- random-idea-spike
 tags: []
 status: publish
 type: post

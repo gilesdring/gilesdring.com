@@ -17,7 +17,7 @@ meta: {}
   Additional Paternity Leave. I can honestly say that this is one of the most
   rewarding things I've done (especially having also done the same for our
   first daughter).
-</p>
+</p><!-- more -->
 
 <p>
   Given the inevitable pressures of working life, especially for knowledge

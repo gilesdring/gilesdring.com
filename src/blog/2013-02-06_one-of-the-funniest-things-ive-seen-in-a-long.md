@@ -1,7 +1,9 @@
 ---
 
 title: '"He''s the big one"'
-categories: []
+categories:
+- thought-rack
+- random-idea-spike
 tags:
 - owl
 - video

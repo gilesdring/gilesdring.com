@@ -27,7 +27,7 @@ meta: {}
 <p>
   However, rant over, there were some excellent bands on offer — with no real
   duffers, but here are my highlights...
-</p>
+</p><!-- more -->
 
 <h2>Day one</h2>
 

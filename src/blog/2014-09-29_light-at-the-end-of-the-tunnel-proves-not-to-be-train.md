@@ -16,7 +16,7 @@ meta: {}
 <p>
   I've been spectacularly poor at blogging since committing to do so. This
   tells me I must make it part of a routine - perhaps with morning coffee.
-</p>
+</p><!-- more -->
 
 <p>
   This may become easier as I claimed a small victory this evening by

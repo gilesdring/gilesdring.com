@@ -11,14 +11,16 @@ tags:
 status: publish
 type: post
 published: true
-date: 2014-09-15 17:30
 meta: {}
 ---
-<p>So a few metrics:</p>
+So a few metrics:
 
-<p>Passwords changed: 6 (8 if you include the one I had to reset twice)</p>
-<p>Software updates applied: 160+ (granted, this was a background task)</p>
-<p>Emails:</p>
+Passwords changed: 6 (8 if you include the one I had to reset twice)
+
+Software updates applied: 160+ (granted, this was a background task)
+
+Emails:
+<!-- more -->
 <ul>
   <li>received during sabbatical: 1599</li>
   <li>deleted outright with cursory scan (sender / subject line): approx 550</li>

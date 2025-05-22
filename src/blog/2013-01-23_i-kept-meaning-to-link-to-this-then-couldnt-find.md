@@ -1,7 +1,9 @@
 ---
 
 title: Welcome to Life
-categories: []
+categories:
+- thought-rack
+- random-idea-spike
 tags:
 - video
 - legal

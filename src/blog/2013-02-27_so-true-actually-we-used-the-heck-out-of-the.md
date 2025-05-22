@@ -1,7 +1,9 @@
 ---
 
 title: The truth behind baby books
-categories: []
+categories:
+- thought-rack
+- random-idea-spike
 tags: []
 status: publish
 type: post

@@ -19,7 +19,7 @@ meta: {}
   <p lang="en" dir="ltr">Unravelled a thorny jQuery Mobile + Safari + html5 Application Cache + History API bug. Workaround sorted!</p>&mdash; Giles Dring (@gilesdring)
   <a href="https://twitter.com/gilesdring/status/406144073230479360">November 28, 2013</a>
 </blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p><em>This is probably no great shakes in the grand scheme of things, but the tweet has been left unexplained like some minor homage to Fermat ever since. The full story can now be told. Are you sitting comfortably? Then I'll begin...</em></p>
+<p><em>This is probably no great shakes in the grand scheme of things, but the tweet has been left unexplained like some minor homage to Fermat ever since. The full story can now be told. Are you sitting comfortably? Then I'll begin...</em></p><!-- more -->
 
 <p>So I was coding a mobile address book for my business unit at work using jQuery Mobile. I had a view that people would want to use it offline. I'd got the right manifest entries in and had built some lightweight refresh code which would run automatically, or could be manually triggered and the updates seemed to be working smoothly. The final feature to integrate was the dialog which presented the contact details for the person on the chart.</p>
 
