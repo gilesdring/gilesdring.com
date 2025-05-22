@@ -5,6 +5,7 @@ export default function*({ search }) {
         const url = `/tag/${tag}/`
         yield {
             url,
+            tag,
             tags: ['tag'],
             title: `Tag: ${tag}`,
             searchParams: [tag, 'title'],
