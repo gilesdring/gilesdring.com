@@ -46,8 +46,6 @@ site.add('assets/style.css');
 site.add('assets/images');
 site.add('squarespace_images/');
 
-site.copy([".html"]);
-
 // Copy over old projects
 site.copy('vallers2013/');
 site.copy('spinner/');
