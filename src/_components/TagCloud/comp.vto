@@ -1,7 +1,7 @@
 <ul class="tag-cloud">
 {{ for tag of tags }}<li{{if link }}>
 <a href="{{ link(tag) }}"{{ /if -}}>
-{{ tag }}
+<span>{{ tag }}</span>
 {{- if link }}</a>{{ /if -}}
 </li>
 {{- /for }}

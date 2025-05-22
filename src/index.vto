@@ -7,16 +7,15 @@ title: Welcome
   <header>
     <h2><a href="/blog/">Writing</a></h2>
   </header>
-  <ol class="grid">
-    {{ for post of search.pages("blog-post", "date=desc", 3) }}
-      <li class="solid-block"><a href="{{ post.url }}">
-      <h3>{{ post.title }}</h3>
-      </a></li>
-    {{ /for }}
-  </ol>
+  {{ for post of search.pages("blog-post", "date=desc", 3) }}
+    {{ comp.post.ListItem({ post }) }}
+    {{# <li class="solid-block"><a href="{{ post.url }}">
+    <h3>{{ post.title }}</h3>
+    </a></li> #}}
+  {{ /for }}
 </section>
 
-<section>
+<section style="--layer-colour: hsl(190, 20%, 30%, 40%);">
   <header>
     <h2>Projects</h2>
   </header>
@@ -25,8 +24,12 @@ title: Welcome
     Here is a small selection of personal projects.
   </p>
 
+  <div class="grid">
   {{ for project of search.pages('project !catalogue') -}}
+  {{ comp Card }}
   {{ comp.Excerpt({ ...project }) }}
-  {{- endfor -}}
+  {{ /comp }}
+  {{ /for }}
+  </div>
 
 </section>

@@ -6,10 +6,15 @@
     gap: 0.5rem;
     line-height: 1;
     font-size: 0.8em;
-    li {
-        color: yellow;
+    color: yellow;
+    a {
+        text-decoration: none;
+    }
+    li > * {
+        display: block;
         background-color: var(--dark);
-        padding: 0.5em 1em;
         border-radius: 2em;
+        padding: 0.5em 1em;
+        box-shadow: ;
     }
 }

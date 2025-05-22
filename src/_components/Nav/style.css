@@ -1,7 +1,4 @@
 nav.site {
-  a {
-    color: inherit;
-  }      
   ol {
     list-style-type: none;
     display: flex;
@@ -15,6 +12,7 @@ nav.site {
     }
   }
   @media only screen and (max-width: 700px) {
+    z-index: 999;
     position: fixed;
     left: 0;
     bottom: 0;

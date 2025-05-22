@@ -21,6 +21,7 @@ h3 {
 
 a {
   &:hover {
+    color: #111111;
     background-color: yellow;
     text-decoration: underline;
   }
