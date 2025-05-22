@@ -20,8 +20,8 @@ h3 {
 }
 
 a {
-  text-decoration: none;
   &:hover {
+    background-color: yellow;
     text-decoration: underline;
   }
 }

@@ -1,26 +1,29 @@
 <ul class='license'>
-  <li>
+  <div class="badge">
     <a rel="license"
        href="http://creativecommons.org/licenses/by-sa/4.0/">
        <img alt="Creative Commons License"
             style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/></a>
-  </li>
-  <li>
-    {% if include.title %}<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">{{ include.title }}</span>{%
-      else
-    %}This work{%
-    endif
-    %} by <a xmlns:cc="http://creativecommons.org/ns#"
-          href="{{ include.url }}"
+  </div>
+  <div>
+  <p>
+    {{ if title -}}
+        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">{{ title }}</span>
+    {{- else -}}
+        This work
+    {{- /if }}
+    by <a xmlns:cc="http://creativecommons.org/ns#"
+          href="{{ url }}"
           property="cc:attributionName"
-          rel="cc:attributionURL">{{ include.author }}</a>
+          rel="cc:attributionURL">{{ author }}</a>
     is licensed under a
     <a rel="license"
        href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-  </li>
-  {% if include.source %}<li>
+  </p>
+  {{ if source }}<p>
     Based on a work at <a xmlns:dct="http://purl.org/dc/terms/"
-                          href="{{ include.source }}"
-                          rel="dct:source">{{ include.source }}</a>.
-  </li>{% endif %}
+                          href="{{ source }}"
+                          rel="dct:source">{{ source }}</a>.
+  </p>{{ /if }}
+  </div>
 </ul>

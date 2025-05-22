@@ -1,0 +1,18 @@
+.license {
+  background-color: #b6b6b6;
+  padding: 0.5rem;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+
+  * {
+    font-size: 1em;
+    margin-block: 0;
+    padding-block: 0;
+  }
+
+  .badge {
+    flex-shrink: 0;
+  }
+}
