@@ -5,7 +5,7 @@ import date from "lume/plugins/date.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import metas from "lume/plugins/metas.ts";
 import minify_html from "lume/plugins/minify_html.ts";
-import sass from "lume/plugins/sass.ts";
+import postcss from "lume/plugins/postcss.ts";
 
 const site = lume();
 
@@ -33,9 +33,9 @@ site.use(date());
 site.use(nunjucks());
 site.use(metas());
 site.use(minify_html());
-site.use(sass());
+site.use(postcss());
 
-site.add(['.scss'])
+site.add('assets/style.css');
 
 site.copy("assets/images");
 site.copy([".html"]);

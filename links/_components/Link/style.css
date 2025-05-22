@@ -1,0 +1,14 @@
+[data-comp=Link] {
+    background-image: var(--link-img);
+    background-size: cover;
+    background-position: center;
+    > a {
+        display: block;
+        color: white;
+        padding: 0.5em;
+        background-color: hsla(0, 0%, 0%, 0.5);
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

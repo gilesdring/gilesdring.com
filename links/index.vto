@@ -1,0 +1,11 @@
+---
+layout: layouts/page.njk
+title: Links
+nav:
+  order: 50
+---
+{{ comp Grid }}
+  {{ for link of links }}
+    {{ comp.Link({ ...link }) }}
+  {{ /for }}
+{{ /comp }}

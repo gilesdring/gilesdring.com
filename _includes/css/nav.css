@@ -1,13 +1,13 @@
 nav.top {
-  @include small-screen() {
+  @media only screen and (max-width: 1023px) {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     border-radius: 0.5em 0.5em 0 0;
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
-    color: $dark-contrast;
-    background: $dark;
+    color: var(--dark-contrast);
+    background: var(--dark);
     a {
       color: inherit;
     }      
@@ -16,12 +16,12 @@ nav.top {
     list-style-type: none;
     display: flex;
     li {
-      @include large-screen() {
+      @media only screen and (min-width: 1024px) {
         padding-left: 1em;
         padding-top: 0.5em;
         padding-bottom: 0.5em;
       }
-      @include small-screen() {
+      @media only screen and (max-width: 1023px) {
         margin: 1em;
       }
       &.current {

@@ -1,0 +1,10 @@
+@import 'css/reset.css';
+@import 'css/colours.css';
+@import 'css/layout.css';
+@import 'css/typography.css';
+@import 'css/nav.css';
+
+:root {
+    --bg-image: url("/assets/images/arches-trans.png");
+    --site-logo: url("/assets/images/sad-viking.svg");
+}
