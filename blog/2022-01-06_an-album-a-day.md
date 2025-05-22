@@ -1,4 +1,5 @@
 ---
+title: An Album A Day
 tags:
     - resolutions
     - music
@@ -8,7 +9,11 @@ tags:
 
 1st January 2021. It seems like an awfully long time ago. Much has happened, and equally much has not happened. I remember distinctly where I was on January 1st -- standing in my kitchen, washing up and listening to Beauty Pill's amazing album [_Beauty Pill Describes Things As They Are_][BPDTATA]. I resolved, there and then, to listen to a different album a day during January, in part as a way of broadening my horizons and in part to have a project. I am keen on a project, as demonstrated by 2020's [recreation of various popular hits on some of my mini synth collection][CONDENSED_MIXES].
 
+[BPDTATA]: https://beautypill.bandcamp.com/album/describes-things-as-they-are
+[CONDENSED_MIXES]: https://youtube.com/playlist?list=PLe-JXOO-cW37A2mOzTgkKqPkaNgG_rfS3
+
 Somehow, during January, this mutated in not just the month but the entire year. I told everyone that I'd see how long this lasted, and I wasn't going to beat myself up if I didn't manage to complete this.
+<!--more-->
 
 Reader, I can report that I followed through with this resolution. I listened to a different album for every day of 2021. I had very few rules to this -- just listen to an album, new or old, known or unknown to me. Of course, part of this was to broaden my listening, so I racked up 315 albums (86%) which were new to me. Some astounding stuff, some instantly forgettable or downright irritating. The point of this was not to publish reviews, so I didn't bother with a star rating or anything of the like. Just a challenge to myself.
 
@@ -37,8 +42,7 @@ In the meantime, if you fancy a listen, here is my pick of songs from the albums
 
 There's also a [version of this on Spotify][AAAD_SPOTIFY].
 
-[BPDTATA]: https://beautypill.bandcamp.com/album/describes-things-as-they-are
-[CONDENSED_MIXES]: https://youtube.com/playlist?list=PLe-JXOO-cW37A2mOzTgkKqPkaNgG_rfS3
+
 [THEWIRE]: https://www.thewire.co.uk/
 [AOTY_NR]: https://www.albumoftheyear.org/releases/
 [AOTY_2021]: https://www.albumoftheyear.org/list/summary/2021/

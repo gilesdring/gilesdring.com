@@ -1,5 +1,5 @@
 ---
-date: 2020-07-06T00:00:00.000Z
+title: Running Like A Punk
 tags:
   - running
   - punk

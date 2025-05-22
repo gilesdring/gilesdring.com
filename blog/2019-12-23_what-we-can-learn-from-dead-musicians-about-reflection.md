@@ -1,7 +1,5 @@
 ---
-
 title: What we can learn from dead musicians about reflection
-date: 2019-12-23T11:00:00.000Z
 tags:
   - minimalism
   - mindfulness
