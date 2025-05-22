@@ -1,4 +1,5 @@
 ---
+title: A Change Will Do You Good
 spotify_uri: spotify:album:1UMvR1rwj9EzLnbj4L6Zoy
 strava_link: https://www.strava.com/activities/3734975356/embed/f870f1f5f6f6d5de1344cad7a9d1a2c5951e04cd
 tags:

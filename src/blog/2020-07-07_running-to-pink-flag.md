@@ -1,4 +1,5 @@
 ---
+title: Running To Pink Flag
 spotify_uri: spotify:album:4WXqZZ28geJSPtqLcCF56L
 strava_link: https://www.strava.com/activities/3725257159/embed/005511db8ed64745301c59329d63d5c9ab2ef7de
 tags:

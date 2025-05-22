@@ -7,7 +7,9 @@ import minify_html from "lume/plugins/minify_html.ts";
 import nunjucks from "lume/plugins/nunjucks.ts";
 import postcss from "lume/plugins/postcss.ts";
 
-const site = lume();
+const site = lume({
+  src: './src',
+});
 
 site.preprocess(['.md'], (pages) => {
   for (const page of pages) {

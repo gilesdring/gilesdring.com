@@ -1,4 +1,5 @@
 ---
+title: World As A Waiting Room
 bandcamp:
   id: 2141843020
   link: http://radiomilkrecords.com/album/world-as-a-waiting-room
