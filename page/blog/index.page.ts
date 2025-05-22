@@ -1,5 +1,6 @@
-export const layout = "layouts/post_index.njk";
+export const layout = "layouts/post_index.vto";
 export const title = "Blog";
+// export const renderOrder = 1;
 
 export default function* ({ search, paginate }) {
   const posts = search.pages("post", "date=desc");

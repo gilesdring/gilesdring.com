@@ -1,0 +1,10 @@
+<article class='excerpt'>
+  <header>
+    <h{{ level || "2" }}><a href='{{post.url}}'>{{ post.title }}</a></h{{ level || "2" }}>
+  </header>
+  {{ post.excerpt |> md }}
+  <a href="{{ post.url }}">Read More &xrarr;</a>
+  <footer>
+    {{ comp.post_meta({ post: post })}}
+  </footer>
+</article>

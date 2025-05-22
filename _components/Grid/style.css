@@ -6,9 +6,13 @@
     gap: 1em;
     flex-wrap: wrap;
     align-items: stretch;
+    padding: 0;
     > * {
         padding: 0;
         aspect-ratio: 1/1;
         flex-basis: var(--grid-size);
+    }
+    li {
+        list-style: none;
     }
 }

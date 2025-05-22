@@ -3,5 +3,7 @@ layout: layouts/common.njk
 class: post
 ---
 <header><h1>{{ title }}</h1></header>
-{{ content | safe }}
-<footer>{% include "post_meta.njk" %}</footer>
+{{ content }}
+<footer>
+  {{ comp.post_meta({ post: page.data }) }}
+</footer>

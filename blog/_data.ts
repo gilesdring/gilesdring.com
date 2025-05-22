@@ -1,6 +1,7 @@
-export function url(page) {
-  // /blog/:year/:month/:day/:slug/
+import { Page } from "lume/core/file.ts";
+
+export function url(page: Page) {
+  // Aiming for this -> /blog/:year/:month/:day/:slug/
   const folder = page.src.path.split('_')[0].replace(/-/g, "/");
-  const url = page.dest.path.replace(/^\/blog/, folder) + "/";
-  return url;
+  return page.data.url.replace(/^\/blog/, folder).toLowerCase()
 }

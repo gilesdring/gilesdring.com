@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+title:  Blog
+---
+
+{{ include "partial/pagination.vto" }}
+<hr>
+
+{{ for post of results }}
+  {{ comp.post_excerpt({ post: post }) }}
+  <hr>
+{{ /for }}
+
+{{ include "partial/pagination.vto" }}
