@@ -1,5 +1,5 @@
 {% set containing_tag = "ol" %}
-{% set nav_pages = search.pages("nav.order!=undefined", "nav.order") | data %}
+{% set nav_pages = search.pages("nav.order!=undefined", "nav.order") %}
 <nav class="top">
   <{{ containing_tag }}>
     {% for p in nav_pages -%}
