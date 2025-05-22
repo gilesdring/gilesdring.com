@@ -8,9 +8,9 @@ title: Giles Dring
     <h1><a href="/blog/">Blog</a></h1>
   </header>
   <ol class="grid">
-    {% for post in search.pages("blog", "date=desc", 3) | data %}
-      <li class="solid-block"><a href="{{ post.url }}">{{ post.title | safe }}</a></li>
-    {% endfor %}
+    {{ for post of search.pages("blog", "date=desc", 3) }}
+      <li class="solid-block"><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {{ /for }}
   </ol>
 </section>
 
@@ -23,6 +23,8 @@ title: Giles Dring
     Here is a small selection of personal projects.
   </p>
 
-  {%- include "project_list.njk" -%}
+  {{ for project of search.pages('project !catalogue') -}}
+  {{ comp.Excerpt({ ...project }) }}
+  {{- endfor -}}
 
 </section>

@@ -1,0 +1,7 @@
+{{ for project of search.pages('project !catalogue') -}}
+<article class='project'>
+  <header><h{{ level || 2 }}>{{ project.title }}</h{{ level || 2 }}></header>
+  {{ project.description }}
+  <footer><a href="{{ project.url }}">See more &xrarr;</a></footer>
+</article>
+{{- endfor -}}
