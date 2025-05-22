@@ -1,6 +1,0 @@
-<iframe
-  class='bandcamp'
-  src="https://bandcamp.com/EmbeddedPlayer/album={{ include.id }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
-  seamless>
-  {% if include.link %}<a href='{{ include.link }}'>{{ include.title | default: 'Link to Bandcamp' }}</a>{% endif %}
-</iframe>

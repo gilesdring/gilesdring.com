@@ -1,0 +1,6 @@
+<iframe
+  class='bandcamp'
+  src="https://bandcamp.com/EmbeddedPlayer/album={{ id | page.data.embed.bandcamp }}/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"
+  seamless>
+  {{ if link }}<a href='{{ link }}'>{{ title || 'Link to Bandcamp' }}</a>{{ /if }}
+</iframe>
