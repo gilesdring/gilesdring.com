@@ -14,7 +14,9 @@ nav.site {
       }
     }
   }
-  @media only screen and (max-width: 700px) {
+}
+@media only screen and (max-width: 700px) {
+  nav.site {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -23,5 +25,8 @@ nav.site {
     color: var(--dark-contrast);
     background: var(--dark);
     padding: 1rem;
+  }
+  body {
+    padding-bottom: 4em;
   }
 }

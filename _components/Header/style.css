@@ -1,0 +1,25 @@
+body > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 a {
+    display: flex;
+    padding: 0;
+    line-height: initial;
+    align-items: center;
+  }
+
+  div.logo {
+    background-image: var(--site-logo);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 3em;
+    width: 2em;
+  }
+
+  div {
+    word-wrap: break-word;
+    max-width: 5rem;
+  }
+}

@@ -1,9 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-<header>
-  {% include "header.njk" -%}
-</header>
+{{ comp.Header() | await | safe }}
 <section role="main">
   {{ content | safe }}
 </section>
