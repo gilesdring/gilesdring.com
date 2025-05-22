@@ -1,0 +1,15 @@
+.tag-cloud {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    line-height: 1;
+    font-size: 0.8em;
+    li {
+        color: yellow;
+        background-color: var(--dark);
+        padding: 0.5em 1em;
+        border-radius: 2em;
+    }
+}

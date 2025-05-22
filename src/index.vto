@@ -8,7 +8,7 @@ title: Welcome
     <h2><a href="/blog/">Writing</a></h2>
   </header>
   <ol class="grid">
-    {{ for post of search.pages("blog", "date=desc", 3) }}
+    {{ for post of search.pages("blog-post", "date=desc", 3) }}
       <li class="solid-block"><a href="{{ post.url }}">
       <h3>{{ post.title }}</h3>
       </a></li>

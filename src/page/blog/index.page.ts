@@ -3,7 +3,7 @@ export const title = "Writing";
 // export const renderOrder = 1;
 
 export default function* ({ search, paginate }) {
-  const posts = search.pages("post", "date=desc");
+  const posts = search.pages("blog-post", "date=desc");
   const options = {
     url: (n: number) => `/blog/page${n}/`,
     size: 5,

@@ -1,3 +1,17 @@
+---
+css: |
+  .excerpt {
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 2rem;
+      *:first-child {
+        flex-shrink: 0;
+        flex-grow: 1;
+      }
+    }
+  }
+---
 <article class='excerpt'>
   <header>
     <h{{ level || "2" }}><a href='{{post.url}}'>{{ post.title }}</a></h{{ level || "2" }}>
