@@ -1,22 +1,15 @@
-:root{
-  --site-hue: 190;
-  --dark: hsl(229, 47%, 22%);
-  --dark-contrast: hsl(64, 73%, 51%);
-  --page-bg-colour: hsl(var(--site-hue), 10%, 80%);
-  --page-bg-image: var(--bg-image);
-}
-
 body {
+  color: #e4e4e4;
   background-color: var(--page-bg-colour);
   background-attachment: fixed;
   background-image: var(--page-bg-image);
 }
 
-/*
-%transparent-block {
-  $background: change-color($dark, $alpha: 0.7);
-  color: invert($background);
-  a { color: inherit; }
-  background-color: $background;
+main {
+  background-color: hsl(55, 80%, 5%, 10%);
+  border: 1px solid hsl(55, 80%, 5%);
+  border-radius: 5px;
+  box-shadow: hsl(0, 0%, 0%, 10%) 0 0 10px 5px;
+  padding-block: 0.5rem;
+  backdrop-filter: blur(3px);
 }
-*/

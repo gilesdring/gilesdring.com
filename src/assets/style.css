@@ -4,6 +4,11 @@
 @import 'css/typography.css';
 
 :root {
-    --bg-image: url("/assets/images/arches-trans.png");
-    --site-logo: url("/assets/images/sad-viking.svg");
+  --bg-image: url("/assets/images/arches-trans.png");
+  --site-logo: url("/assets/images/sad-viking.svg");
+  --site-hue: 190;
+  --dark: hsl(229, 47%, 22%);
+  --dark-contrast: hsl(64, 73%, 51%);
+  --page-bg-colour: hsl(var(--site-hue), 90%, 10%);
+  --page-bg-image: var(--bg-image);
 }
