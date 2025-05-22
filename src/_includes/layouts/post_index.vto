@@ -7,7 +7,7 @@ title:  Writing
 <hr>
 
 {{ for post of results }}
-  {{ comp.post_excerpt({ post: post }) }}
+  {{ comp.post.ListItem({ post: post }) }}
   <hr>
 {{ /for }}
 

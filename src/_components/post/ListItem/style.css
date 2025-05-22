@@ -1,0 +1,12 @@
+.excerpt {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 2rem;
+
+    > *:first-child {
+      flex-shrink: 0;
+      flex-grow: 1;
+    }
+  }
+}
