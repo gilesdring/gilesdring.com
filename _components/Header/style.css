@@ -20,6 +20,5 @@ body > header {
 
   div {
     word-wrap: break-word;
-    max-width: 5rem;
   }
 }
