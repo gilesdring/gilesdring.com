@@ -4,7 +4,6 @@ import date from "lume/plugins/date.ts";
 import extractDate from "lume/plugins/extract_date.ts";
 import metas from "lume/plugins/metas.ts";
 import minify_html from "lume/plugins/minify_html.ts";
-import nunjucks from "lume/plugins/nunjucks.ts";
 import postcss from "lume/plugins/postcss.ts";
 
 const site = lume({
@@ -33,8 +32,6 @@ site.ignore('admin');
 
 site.use(base_path());
 site.use(date());
-// site.use(inline());
-site.use(nunjucks());
 site.use(metas());
 site.use(minify_html());
 site.use(postcss());

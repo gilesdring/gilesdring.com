@@ -8,7 +8,7 @@ type: page
 published: true
 meta: {}
 project_sources: /scrambledphysics/
-templateEngine: njk,md
+templateEngine: vto,md
 description: |
   I've written a simple physics library in Processing.
   It's called ScrambledPhysics.
