@@ -9,7 +9,8 @@ meta: {}
 description: |
   From time to time I create something useful for a specific purpose.
   These often find repeated use, and I'm sharing them here in case they are of
-  interest to you. 
+  interest to you.
+templateEngine: md, vto
 ---
 From time to time I create something useful for a specific purpose.
 These often find repeated use, and I'm sharing them here in case they are of
@@ -33,7 +34,11 @@ time-to-time. Do take a look at his site.
 In the meantime, here's my [Automated Compact Calendar][ACC] tool as an Excel
 template.
 
-{% include cc_license.html author='Giles Dring' title='Automated Compact Calendar' source='http://davidseah.com/node/compact-calendar/' %}
+{{ comp.License({
+  author: 'Giles Dring',
+  title: 'Automated Compact Calendar',
+  source: 'http://davidseah.com/node/compact-calendar/',
+}) }}
 
 
 
