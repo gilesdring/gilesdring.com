@@ -8,6 +8,7 @@ tags:
 
 I've been playing in a band with some local friends / dads (prosaically known until yesterday as _Dad Band_, now dubbed _Fustians_). Every other Friday night we book out a rehearsal studio and bash out a few tunes. We've been doing it for six months or so, and having made a decision not to do covers, it's been interesting to observe the growth of a creative unit.
 
+<!-- more -->
 On reflection, we've been traversing the stages of group development as [described by Bruce Tuckman][TUCKMAN].
 
 Our early practices were filled with optimism and some early success in the form of some pretty musically interesting jams. We've even developed a few nascent songs.

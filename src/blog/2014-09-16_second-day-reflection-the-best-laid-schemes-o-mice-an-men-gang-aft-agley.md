@@ -17,6 +17,7 @@ meta: {}
 ---
 Today turned out to be fairly typical of a day in the office. Here's how it played out:
 
+<!-- more -->
 Arrive in the office at about 8:45. Say hi to a few folks, and get my laptop booted up. Write a short blog post looking forward to today...
 
 __9:00-10:00__

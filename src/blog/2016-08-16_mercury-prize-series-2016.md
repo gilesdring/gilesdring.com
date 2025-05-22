@@ -11,6 +11,8 @@ In common with previous years (although not for the last couple of years),
 I've decided to listen to all the Mercury Prize nominees and write up a brief
 review of each.
 
+<!-- more -->
+
 The [shortlist][NOMS] is below. My aim is write a review per day over the next
 week and a bit. I probably won't, but it's good to have aims.
 

@@ -14,7 +14,7 @@ tags:
 Final run of week one - it was optional, so I didn't feel too bad having a 5 minute sit down in the
 middle! Felt really good for the first 5 or mins, like I was in a real flow. I think the fluency
 and stamina will come as I run more (and the weight comes off). I again justified the periods of walking by ensuring I keep enjoying
-running.
+running.<!-- more -->
 
 {% include embeds/bandcamp.html id=page.bandcamp.id link=page.bandcamp.link title=page.bandcamp.title %}
 

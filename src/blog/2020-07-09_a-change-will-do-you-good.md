@@ -12,7 +12,7 @@ tags:
 
 Second run of Sofa To So Far, and this time I was accompanied by Gang of Four.
 More mid-tempo stuff, but with some aggression this time. I reckon I need to put
-together a running punk playlist.
+together a running punk playlist.<!-- more -->
 
 {% include embeds/spotify.html uri=page.spotify_uri %}
 

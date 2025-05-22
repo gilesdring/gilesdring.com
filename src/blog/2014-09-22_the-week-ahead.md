@@ -13,6 +13,8 @@ So, here I am at the start of a second week back after paternity leave.
 Here are a few ruminations on last week, plus some thoughts about the week
 ahead.
 
+<!-- more -->
+
 I found it very productive to blog about my working day, on a number of counts.
 
 

@@ -16,6 +16,8 @@ Yesterday morning I had an epiphany. Well, actually I had a full english
 breakfast, but before that I made the decision to dramatically reduce my
 use of social media until the new year.
 
+<!-- more -->
+
 This actually boils down to removing the Facebook and Twitter apps from my
 iPhone, as it's become apparent to me that my default holding pattern, given
 access to the world's information, literature and opinion, is to dive into

@@ -15,7 +15,7 @@ A few observations from the day:
   [In Our Time](http://www.bbc.co.uk/programmes/b085xpzf) and
   [The Bugle](http://thebuglepodcast.com).
   In particular, the Kepler IOT was
-  fascinating. Must read more about him.
+  fascinating. Must read more about him.<!-- more -->
 * When working on intangible capability
   delivery, user stories are not a great
   vehicle. Something like capability

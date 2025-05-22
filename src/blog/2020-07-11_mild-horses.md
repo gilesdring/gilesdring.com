@@ -13,7 +13,7 @@ tags:
 Third run today. Still finding it challenging to run for the full
 time, and end up walking a bit. I'm rationalising this by telling
 myself that if I end up not enjoying running, I'm less likely to
-do it.
+do it.<!-- more -->
 
 It was really great running through the woods - just getting lost.
 Definitely need to find some suitable routes near Hebden.

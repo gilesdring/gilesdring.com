@@ -14,6 +14,8 @@ For those not aware, Anohni is the chosen name of the the artist formerly
 known as Antony Hegarty. She's no stranger to the Mercury Prize, having
 won in 2005 with _I Am A Bird Now_.
 
+<!-- more -->
+
 This album is an altogether spikier affair. The songs deal with drone warfare,
 surveillance, global warming, the betrayal of the left, loss.
 Anohni's torch singer vocals are this time underpinned by bombastic

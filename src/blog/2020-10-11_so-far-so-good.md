@@ -8,6 +8,7 @@ tags:
 
 Second time's a charm! I technically finished the _Sofa To So Far_ plan that [Jimmy](https://runningpunks.com) wrote for me a couple of weeks ago. This is after about a month off in the middle with injury and camping holidays. Thing is, I didn't really finish it. We were away and I was running unfamiliar routes in "wild country", plus my route tracker dropped about one and a half kilometres of the track. Very unsatisfying.
 
+<!-- more -->
 Anyhow, today, with less of me under my belt (I've been watching my weight) and the beautiful autumn sun, off I went. It’s amazing to think back to when I started this programme and compare with how I felt today. The running was so easy! Not the entire time, and there were still a couple of moments when I had a short stroll, specifically in the final kilometre. I found myself correcting my stride and thinking back to all the tips I’ve picked up. Lookit me! I’m a runner!
 
 {% include embeds/strava.html uri='https://www.strava.com/activities/4181856515/embed/186e57532aad3529f08d120959d5c30b2bedfbe1' %}

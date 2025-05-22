@@ -13,6 +13,7 @@ a structured programme meant it was much easier to not run than run. It's not ju
 running: I've trained for and completed long cycling sportives and then having
 reached my goal, found that the impetus to keep getting on the bike has dropped off.
 
+<!-- more -->
 A series of odd events occurred over the last week which will hopefully change that.
 A [twitter acquaintance](https://twitter.com/CorporateGorila) (we are friends because of
 [Mike Watt](http://www.mikewatt.com/), but that's another story) alerted me to the

@@ -16,6 +16,8 @@ reduced working week, and as a result, Thursday is the new Friday as far as I
 am concerned. I've decided to celebrate by working at home, to further progress
 the thinking on the Proof of Concept.
 
+<!-- more -->
+
 The day in prospect is relatively clear at present. I have a brief review of a
 colleague's document and estimates to complete and subsequent related
 discussion. I have a couple of internal European / Global organisation

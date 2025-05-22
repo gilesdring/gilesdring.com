@@ -2,8 +2,12 @@
   <header>
     <h{{ level || "2" }}><a href='{{post.url}}'>{{ post.title }}</a></h{{ level || "2" }}>
   </header>
+  {{ if post.excerpt }}
   {{ post.excerpt |> md }}
   <a href="{{ post.url }}">Read More &xrarr;</a>
+  {{ else }}
+  {{ post.content |> md }}
+  {{ /if}}
   <footer>
     {{ comp.post_meta({ post: post })}}
   </footer>

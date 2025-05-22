@@ -14,8 +14,9 @@ const site = lume({
 
 site.preprocess(['.md'], (pages) => {
   for (const page of pages) {
-    if (page.data.content && page.data.content!.match(/<!--more-->/)) {
-      const excerpt = page.data.content.split('<!--more-->')[0]
+    const excerptMarker = /<!--\s*more\s*-->/
+    if (page.data.content && page.data.content!.match(excerptMarker)) {
+      const excerpt = page.data.content.split(excerptMarker)[0]
       page.data.excerpt = excerpt;
     }
     // const excerpt = (page.data.content && page.data.content!.match(/<!--more-->/)) ? page.data.content.split(/<!--more-->/)[0] : undefined;
@@ -43,6 +44,7 @@ site.use(extractDate());
 site.add('assets/style.css');
 
 site.add('assets/images');
+site.add('squarespace_images/');
 
 site.copy([".html"]);
 

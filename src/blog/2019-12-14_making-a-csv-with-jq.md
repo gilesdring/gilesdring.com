@@ -10,6 +10,7 @@ tags:
 ---
 I’m finding [jq](https://stedolan.github.io/jq/) to be a really useful tool for dealing with JSON formatted data.
 
+<!-- more -->
 I came across [this Stack Overflow answer](https://stackoverflow.com/questions/32960857/how-to-convert-arbitrary-simple-json-to-csv-using-jq#32965227) for creating a CSV from any array of JSON objects.
 
 ```
