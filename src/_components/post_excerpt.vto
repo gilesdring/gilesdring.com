@@ -17,11 +17,11 @@ css: |
     <h{{ level || "2" }}><a href='{{post.url}}'>{{ post.title }}</a></h{{ level || "2" }}>
   </header>
   {{ if post.excerpt }}
-  {{ post.excerpt |> md }}
+  {{ post.excerpt |> md |> vto(post.page.data) }}
   <a href="{{ post.url }}">Read More &xrarr;</a>
   {{ else }}
-  {{ post.content |> md }}
-  {{ /if}}
+  {{ post.content |> md |> vto(post.page.data) }}
+  {{ /if }}
   <footer>
     {{ comp.post_meta({ post: post })}}
   </footer>

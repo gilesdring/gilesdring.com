@@ -25,3 +25,9 @@ a {
     text-decoration: underline;
   }
 }
+
+blockquote {
+  border-left: solid #aaaaaa 3px;
+  padding-inline-start: 1em;
+  margin-inline: 0;
+}

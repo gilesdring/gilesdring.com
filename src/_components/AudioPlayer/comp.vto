@@ -1,8 +1,8 @@
-{% for item in include.playlist %}
+{{ for item of playlist }}
   <audio controls="controls" title="{{ item.title }}" >
-    {% for file in item.files %}
+    {{ for file of item.files }}
       <source src="{{ file.src }}" type="{{ file.format }}">
-    {% endfor %}
+    {{ /for }}
   Your browser does not support the audio element.
   </audio>
-{% endfor %}
+{{ /for }}

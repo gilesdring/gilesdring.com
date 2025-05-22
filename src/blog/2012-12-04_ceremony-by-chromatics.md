@@ -14,7 +14,7 @@ audio:
         src: http://static.stereogum.com/uploads/2012/12/Chromatics-Ceremony-New-Order-cover.mp3
 ---
 
-{% include audio_player.html playlist=page.audio %}
+{{ comp.AudioPlayer({ playlist: audio }) }}
 
 <p><a href="http://www.kungfugrippe.com/post/37199560336/copycats-ceremony-by-chromatics-originally" class="tumblr_blog">merlin</a>:</p>
 
