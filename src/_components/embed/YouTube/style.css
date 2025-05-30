@@ -1,5 +1,5 @@
-iframe[src*="youtube.com/embed"] {
-    border: 0;
-    width: 100%;
-    aspect-ratio: 16/9;
+iframe[src*='youtube.com/embed'] {
+  border: 0;
+  width: 100%;
+  aspect-ratio: 16/9;
 }

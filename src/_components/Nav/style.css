@@ -17,7 +17,7 @@ nav.site {
     left: 0;
     bottom: 0;
     right: 0;
-    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.75);
     color: var(--dark-contrast);
     background: var(--dark);
     padding: 1rem;

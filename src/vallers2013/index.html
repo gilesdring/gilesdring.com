@@ -1,134 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
-<head>
-<title>Happy Valentine's Day 2013!</title>
-<!-- <link href='http://fonts.googleapis.com/css?family=Dr+Sugiyama|La+Belle+Aurore|Cabin+Sketch|Londrina+Sketch' rel='stylesheet' type='text/css'> -->
-<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
-<!-- <meta name="viewport" content="initial-scale=0.42"> -->
-<style>
-* {
-	margin: 0;
-	padding: 0;
-}
-body {
-	background-image: url('paper_fibers_.png');
-	background-repeat: repeat;
-	background-color: #ffc0c0;
-	/*font-family: 'Dr Sugiyama', cursive;*/
-	/*font-family: 'La Belle Aurore', cursive;*/
-	font-family: 'Cabin Sketch', Helvetica, sans-serif;
-	/*font-family: 'Londrina Sketch', cursive;*/
-	text-align: center;
-	font-size: 40pt;
-}
-a {
-	text-decoration: none;
-	color: red;
-}
-audio {
-	display: none;
-}
-div#loading {
-	min-height: 100%;
-	padding: 4em;
-}
-div#big_heart {
-	display: none;
-	min-height: 100%;
-}
-div#big_heart svg {
-	width: 600px;
-	height: 700px;
-}
-div#message {
-	display: none;
-	padding: 1em;
-}
-div#message p {
-	padding-bottom: 1em;
-}
-div#player {
-	text-align: center;
-	position: fixed;
-	width: 200px;
-	height: 200px;
-	background: red;
-}
-h1 {
-	font-size: 200%;
-	font-weight: normal;
-	display: none;
-}
-p.ps {
-	font-size: 70%;
-	font-style: italic;
-}
-</style>
-<script src="./processing.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-Processing.disableInit();
+  <head>
+    <title>Happy Valentine's Day 2013!</title>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Dr+Sugiyama|La+Belle+Aurore|Cabin+Sketch|Londrina+Sketch' rel='stylesheet' type='text/css'> -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Cabin+Sketch"
+      rel="stylesheet"
+      type="text/css"
+    >
+    <!-- <meta name="viewport" content="initial-scale=0.42"> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url('paper_fibers_.png');
+        background-repeat: repeat;
+        background-color: #ffc0c0;
+        /*font-family: 'Dr Sugiyama', cursive;*/
+        /*font-family: 'La Belle Aurore', cursive;*/
+        font-family: 'Cabin Sketch', Helvetica, sans-serif;
+        /*font-family: 'Londrina Sketch', cursive;*/
+        text-align: center;
+        font-size: 40pt;
+      }
+      a {
+        text-decoration: none;
+        color: red;
+      }
+      audio {
+        display: none;
+      }
+      div#loading {
+        min-height: 100%;
+        padding: 4em;
+      }
+      div#big_heart {
+        display: none;
+        min-height: 100%;
+      }
+      div#big_heart svg {
+        width: 600px;
+        height: 700px;
+      }
+      div#message {
+        display: none;
+        padding: 1em;
+      }
+      div#message p {
+        padding-bottom: 1em;
+      }
+      div#player {
+        text-align: center;
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        background: red;
+      }
+      h1 {
+        font-size: 200%;
+        font-weight: normal;
+        display: none;
+      }
+      p.ps {
+        font-size: 70%;
+        font-style: italic;
+      }
+    </style>
+    <script src="./processing.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      Processing.disableInit();
 
-var heart_url='heart.svg';
+      var heart_url = 'heart.svg';
 
-init = function() {
-	Processing.reload();
- 	var o = document.querySelector('h1#open');
- 	var l = document.querySelector('div#loading');
- 	var bh = document.querySelector('div#big_heart')
- 	var h = document.querySelector('path#heart');
- 	l.style.display = 'none';
- 	o.style.display = 'block';
- 	bh.style.display = 'block';
- 	o.onclick = open_card;
- 	h.onclick = open_card;
-}
-window.onload = init;
+      init = function () {
+        Processing.reload();
+        var o = document.querySelector('h1#open');
+        var l = document.querySelector('div#loading');
+        var bh = document.querySelector('div#big_heart');
+        var h = document.querySelector('path#heart');
+        l.style.display = 'none';
+        o.style.display = 'block';
+        bh.style.display = 'block';
+        o.onclick = open_card;
+        h.onclick = open_card;
+      };
+      window.onload = init;
 
-open_card = function() {
-	var h = document.querySelector('div#big_heart');
-	var a = document.querySelector('audio#mirrorball');
-	var m = document.querySelector('div#message');
-	var p = Processing.getInstanceById('hearts');
-	h.style.display = 'none';
-	a.play();
-	m.style.display = 'block';
-	p.loop();
-};
-</script>
+      open_card = function () {
+        var h = document.querySelector('div#big_heart');
+        var a = document.querySelector('audio#mirrorball');
+        var m = document.querySelector('div#message');
+        var p = Processing.getInstanceById('hearts');
+        h.style.display = 'none';
+        a.play();
+        m.style.display = 'block';
+        p.loop();
+      };
+    </script>
+  </head>
+  <body>
+    <canvas
+      id="hearts"
+      data-processing-sources="Vallers2013.pde"
+      style="position: fixed; left: 0; top: 0; z-index: -1"
+    ></canvas>
 
-</head>
-<body>
-	<canvas id='hearts' data-processing-sources='Vallers2013.pde' style='position: fixed; left: 0; top:0; z-index: -1;'></canvas>
+    <div id="loading">
+      <p>Good things come to those who&hellip;</p>
+      <p>wait</p>
+    </div>
 
-	<div id='loading'>
-		<p>Good things come to those who&hellip;<p>
-		<p>wait</p>
-	</div>
+    <h1 id="open">Be my valentine&hellip;</h1>
 
-	<h1 id='open'>Be my valentine&hellip;</h1>
+    <div id="big_heart">
+      <p>Touch my heart</p>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMinYMin meet"
+        viewBox="0 0 134 160"
+      >
+        <path
+          id="heart"
+          style="fill: red"
+          d="m 67.001387,159.75823 c 0,0 -101.240667,-116.555574 -52.071407,-153.9933299 29.637006,-22.5657881 52.071407,31.7045029 52.071407,31.7045029 0,0 22.434401,-54.270291 52.071403,-31.7045029 C 168.24205,43.202656 67.001387,159.75823 67.001387,159.75823 z"
+        />
+      </svg>
+      <p class="ps">
+        &hellip;and make sure you turn the mute off and the volume up
+      </p>
+    </div>
 
-	<div id='big_heart'>
-		<p>Touch my heart</p>
-		<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" viewBox="0 0 134 160">
-    		<path id='heart' style='fill: red;' d="m 67.001387,159.75823 c 0,0 -101.240667,-116.555574 -52.071407,-153.9933299 29.637006,-22.5657881 52.071407,31.7045029 52.071407,31.7045029 0,0 22.434401,-54.270291 52.071403,-31.7045029 C 168.24205,43.202656 67.001387,159.75823 67.001387,159.75823 z"/>
-		</svg>
-		<p class='ps'>&hellip;and make sure you turn the mute off and the volume up</p>
-	</div>
+    <div id="message">
+      <p>To my darling Rebecca&hellip;</p>
+      <p>
+        I have booked us a night at <a href="http://www.theweavers.co.uk/"
+        >The Weavers</a> in Golcar after we&apos;ve been for our day at Titanic
+        Spa, including a romantic <a href="http://www.theweavers.co.uk/menus"
+        >dinner</a>.
+      </p>
+      <p>All my love&hellip;</p>
+      <p>Your secret admirer x x x</p>
+      <p class="ps">
+        (Don&apos;t look at the web page address - look away from the web page
+        address)
+      </p>
+    </div>
 
-	<div id='message'>
-		<p>To my darling Rebecca&hellip;</p>
-		<p>I have booked us a night at <a href="http://www.theweavers.co.uk/">The Weavers</a> in Golcar after we&apos;ve been for our day at Titanic Spa, including a romantic <a href="http://www.theweavers.co.uk/menus">dinner</a>.</p>
-		<p>All my love&hellip;
-		<p>Your secret admirer x x x</p>
-		<p class='ps'>(Don&apos;t look at the web page address - look away from the web page address)</p>
-	</div>
-
-	<audio id='mirrorball' loop>
-		<!-- <source src="mirrorball.mp3" type="audio/mpeg" /> -->
-		<source src="mirrorball.ogg" type="audio/ogg" />
-		<source src="mirrorball.aac" type="audio/aac" />
-	</audio>
-</body>
-
+    <audio id="mirrorball" loop>
+      <!-- <source src="mirrorball.mp3" type="audio/mpeg" /> -->
+      <source src="mirrorball.ogg" type="audio/ogg" />
+      <source src="mirrorball.aac" type="audio/aac" />
+    </audio>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-import Server from "lume/core/server.ts";
+import Server from 'lume/core/server.ts';
 
 const server = new Server({
   port: 8000,
@@ -7,4 +7,4 @@ const server = new Server({
 
 server.start();
 
-console.log("Listening on http://localhost:8000");
+console.log('Listening on http://localhost:8000');

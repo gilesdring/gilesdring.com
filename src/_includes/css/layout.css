@@ -1,21 +1,21 @@
 .centred {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1em;
-    padding-right: 1em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 body {
-    padding-bottom: 7rem;
-    > * {
-        max-width: 800px;
-        margin-inline: auto;
-        padding-inline: 1rem;
-    }
+  padding-bottom: 7rem;
+  > * {
+    max-width: 800px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-    line-height: 1.5em;
-    padding-bottom: 0.5em;
+  line-height: 1.5em;
+  padding-bottom: 0.5em;
 }

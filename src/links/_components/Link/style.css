@@ -1,19 +1,19 @@
-[data-comp=Link] {
-    background-image: var(--link-img);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    aspect-ratio: 1;
-    > a {
-        display: block;
-        padding: 0.5em;
-        background-color: hsla(0, 0%, 0%, 0.5);
-        &:hover {
-            text-decoration: underline;
-        }
-        & > * {
-            margin-block: 0;
-            padding-block: 0;
-        }
+[data-comp='Link'] {
+  background-image: var(--link-img);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  aspect-ratio: 1;
+  > a {
+    display: block;
+    padding: 0.5em;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    &:hover {
+      text-decoration: underline;
     }
+    & > * {
+      margin-block: 0;
+      padding-block: 0;
+    }
+  }
 }

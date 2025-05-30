@@ -1,4 +1,4 @@
 iframe.sixteen-by-nine[src*='player.vimeo.com/video/'] {
-    aspect-ratio: 16/9;
-    width: 100%;
+  aspect-ratio: 16/9;
+  width: 100%;
 }

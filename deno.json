@@ -27,5 +27,28 @@
       "deno.json"
     ],
     "entrypoint": "serve.ts"
+  },
+  "lint": {
+    "include": [
+      "src/"
+    ],
+    "exclude": [
+      "**/*.min.js"
+    ]
+  },
+  "fmt": {
+    "include": [
+      "*.ts",
+      "src/"
+    ],
+    "exclude": [
+      "**/*.md",
+      "**/*.min.js"
+    ],
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 2,
+    "singleQuote": true,
+    "proseWrap": "preserve"
   }
 }

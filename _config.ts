@@ -1,12 +1,12 @@
-import lume from "lume/mod.ts";
-import base_path from "lume/plugins/base_path.ts";
-import date from "lume/plugins/date.ts";
-import extractDate from "lume/plugins/extract_date.ts";
-import feed from "lume/plugins/feed.ts";
-import inline from "lume/plugins/inline.ts";
-import metas from "lume/plugins/metas.ts";
-import minify_html from "lume/plugins/minify_html.ts";
-import postcss from "lume/plugins/postcss.ts";
+import lume from 'lume/mod.ts';
+import base_path from 'lume/plugins/base_path.ts';
+import date from 'lume/plugins/date.ts';
+import extractDate from 'lume/plugins/extract_date.ts';
+import feed from 'lume/plugins/feed.ts';
+import inline from 'lume/plugins/inline.ts';
+import metas from 'lume/plugins/metas.ts';
+import minify_html from 'lume/plugins/minify_html.ts';
+import postcss from 'lume/plugins/postcss.ts';
 
 const site = lume({
   src: './src',
@@ -15,9 +15,9 @@ const site = lume({
 
 site.preprocess(['.md'], (pages) => {
   for (const page of pages) {
-    const excerptMarker = /<!--\s*more\s*-->/
+    const excerptMarker = /<!--\s*more\s*-->/;
     if (page.data.content && page.data.content!.match(excerptMarker)) {
-      const excerpt = page.data.content.split(excerptMarker)[0]
+      const excerpt = page.data.content.split(excerptMarker)[0];
       page.data.excerpt = excerpt;
     }
     // const excerpt = (page.data.content && page.data.content!.match(/<!--more-->/)) ? page.data.content.split(/<!--more-->/)[0] : undefined;
@@ -39,16 +39,16 @@ site.use(inline());
 site.use(minify_html());
 site.use(postcss());
 site.use(feed({
-  query: "blog-post",
+  query: 'blog-post',
   info: {
-    title: "=site.title",
-    description: "=site.description",
+    title: '=site.title',
+    description: '=site.description',
   },
   items: {
-    title: "=title",
-    description: "=excerpt || =description",
-  }
-}))
+    title: '=title',
+    description: '=excerpt || =description',
+  },
+}));
 
 site.use(extractDate());
 
