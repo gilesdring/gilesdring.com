@@ -8,16 +8,18 @@ title: Welcome
     <h2><a href="/blog/">Writing</a></h2>
   </header>
   {{ for post of search.pages("blog-post", "date=desc", 3) }}
-    {{ comp.post.ListItem({ post }) }}
+    {{ comp.post.ListItem({ post, level: 3 }) }}
     {{# <li class="solid-block"><a href="{{ post.url }}">
     <h3>{{ post.title }}</h3>
     </a></li> #}}
   {{ /for }}
 </section>
 
+<hr>
+
 <section style="--layer-colour: hsl(190, 20%, 30%, 40%);">
   <header>
-    <h2>Projects</h2>
+    <h2><a href="{{ "~/projects/index.vto" |> url }}">Projects</a></h2>
   </header>
 
   <p>
@@ -27,7 +29,7 @@ title: Welcome
   {{ comp Grid }}
     {{ for project of search.pages('project !catalogue') -}}
       {{ comp Card }}
-        {{ comp.Excerpt({ ...project }) }}
+        {{ comp.Excerpt({ ...project, level: 3 }) }}
       {{ /comp }}
     {{ /for }}
   {{ /comp }}
