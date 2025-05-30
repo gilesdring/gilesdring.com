@@ -2,3 +2,8 @@ layout: layouts/post.vto
 templateEngine: md, vto
 tags:
   - blog-post
+breadcrumbs:
+  - link: /
+    title: Home
+  - link: /blog/
+    title: Writings

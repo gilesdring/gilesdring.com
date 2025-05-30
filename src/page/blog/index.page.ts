@@ -7,6 +7,11 @@ export default function* ({ search, paginate }) {
   const options = {
     url: (n: number) => `/blog/page${n}/`,
     size: 5,
+    each: (p) => {
+      p.breadcrumbs = [
+        { link: '/', title: 'Home' }
+      ];
+    }
   };
 
   for (const page of paginate(posts, options)) {

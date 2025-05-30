@@ -1,0 +1,14 @@
+[data-comp=breadcrumbs] {
+    ol {
+        --breadcrumb-gap: 0.7ch;
+        display: flex;
+        padding-inline: 0;
+        list-style: none;
+        gap: var(--breadcrumb-gap);
+        > li + li:before {
+            content: "\00A7";
+            padding-right: var(--breadcrumb-gap);
+
+        }
+    }
+}

@@ -1,0 +1,10 @@
+
+{{ if page.data.breadcrumbs }}
+<nav data-comp="breadcrumbs">
+<ol>
+{{ for crumb of page.data.breadcrumbs }}
+<li><a href="{{ crumb.link }}">{{ crumb.title }}</a></li>
+{{ /for }}
+</ol>
+</nav>
+{{ /if }}
