@@ -1,21 +1,33 @@
 body > header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-bottom: 1em;
 
-  h1 a {
+  > * {
+    flex-grow: 0;
+    &.padding {
+      flex-grow: 1;
+    }
+  }
+
+  > a {
+    font-size: 1.5em;
     display: flex;
     padding: 0;
     line-height: initial;
     align-items: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 200;
   }
 
-  div.logo {
-    background-image: var(--site-logo);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 3em;
-    width: 2em;
+  svg {
+    fill: rgb(61, 78, 61);
+    height: 3rem;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
   }
 
   div {

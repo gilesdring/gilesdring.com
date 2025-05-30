@@ -3,6 +3,7 @@ import base_path from "lume/plugins/base_path.ts";
 import date from "lume/plugins/date.ts";
 import extractDate from "lume/plugins/extract_date.ts";
 import feed from "lume/plugins/feed.ts";
+import inline from "lume/plugins/inline.ts";
 import metas from "lume/plugins/metas.ts";
 import minify_html from "lume/plugins/minify_html.ts";
 import postcss from "lume/plugins/postcss.ts";
@@ -34,6 +35,7 @@ site.ignore('admin');
 site.use(base_path());
 site.use(date());
 site.use(metas());
+site.use(inline());
 site.use(minify_html());
 site.use(postcss());
 site.use(feed({
