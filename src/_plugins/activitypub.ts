@@ -101,9 +101,9 @@ function activitypub(
         // },
         publicKey: {
           '@context': 'https://w3id.org/security/v1',
-          '@id': `${domain.origin}/@${account}#main-key`,
           '@type': 'Key',
-          controller: `${domain.origin}/@${account}`,
+          'id': `${domain.origin}/@${account}#main-key`,
+          owner: `${domain.origin}/@${account}`,
           publicKeyPem: publicKey,
         },
         // attachment: [
@@ -182,10 +182,11 @@ function activitypub(
     }
 
     function generateOutbox(pages: Lume.Data[]) {
+      const { domain, urls} = config;
       return JSON.stringify(
         {
           '@context': 'https://www.w3.org/ns/activitystreams',
-          id: `https://${config.domain}${config.urls.outbox}`,
+          id: `${domain.origin}${urls.outbox}`,
           type: 'OrderedCollection',
           // summary: site.data.metas?.description,
           totalItems: pages.length,
