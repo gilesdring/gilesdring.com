@@ -49,6 +49,7 @@
     "lineWidth": 80,
     "indentWidth": 2,
     "singleQuote": true,
-    "proseWrap": "preserve"
+    "proseWrap": "preserve",
+    "quoteProps": "asNeeded"
   }
 }
