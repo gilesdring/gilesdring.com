@@ -138,7 +138,7 @@ function activitypub(
 
       const note = {
         '@context': 'https://www.w3.org/ns/activitystreams',
-        id: `${link}=create`,
+        id: `${link}-create`,
         type: 'Create',
         actor: `${domain.origin}/@${account}`,
         object: {
