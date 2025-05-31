@@ -8,6 +8,8 @@ import metas from 'lume/plugins/metas.ts';
 import minify_html from 'lume/plugins/minify_html.ts';
 import postcss from 'lume/plugins/postcss.ts';
 
+import activitypub from './src/_plugins/activitypub.ts';
+
 const site = lume({
   src: './src',
   location: new URL('https://gilesdring.com/'),
@@ -51,6 +53,11 @@ site.use(feed({
 }));
 
 site.use(extractDate());
+
+site.use(activitypub({
+  account: 'fedi',
+  domain: new URL('https://gilesdring.com'),
+}));
 
 site.add('assets/style.css');
 

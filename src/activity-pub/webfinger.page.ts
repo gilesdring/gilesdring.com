@@ -1,23 +1,23 @@
-import { account, domain } from './_config.ts';
-
-export const url = '/.well-known/webfinger';
-
-export default function () {
+export default function* ({ activitypub }: Lume.Data) {
+  const { account, domain } = activitypub;
   const content = {
-    subject: `acct:${account}@${domain}`,
-    aliases: [`https://${domain}/@${account}`],
+    subject: `acct:${account}@${domain.host}`,
+    aliases: [`${domain.origin}/@${account}`],
     links: [
       {
         rel: 'self',
         type: 'application/activity+json',
-        href: `https://${domain}/@${account}`,
+        href: `${domain.origin}/@${account}`,
       },
       {
         rel: 'http://webfinger.net/rel/profile-page',
         type: 'text/html',
-        href: `https://${domain}`,
+        href: `${domain}`,
       },
     ],
   };
-  return JSON.stringify(content, null, 2);
+  yield {
+    url: '/.well-known/webfinger',
+    content: JSON.stringify(content, null, 2),
+  };
 }

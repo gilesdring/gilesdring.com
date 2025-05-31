@@ -1,27 +1,23 @@
-import { account, domain } from './_config.ts';
-import site from '../../_config.ts';
-
-export const url = `/@${account}`;
-
-export default function ({ metas }) {
+export default function* ({ metas, activitypub }: Lume.Data) {
+  const { account, domain } = activitypub;
   const actor = {
     '@context': 'https://www.w3.org/ns/activitystreams',
-    id: `https://${domain}/@${account}`,
+    id: `${domain.origin}/@${account}`,
     type: 'Person',
     following: 'https://mastodon.me.uk/users/gilesdring/following',
     followers: 'https://mastodon.me.uk/users/gilesdring/followers',
-    outbox: `https://${domain}/socialweb/outbox`,
+    outbox: `${domain.origin}${activitypub.urls.outbox}`,
     // inbox: 'https://activitypubdotnet.azurewebsites.net/api/Inbox',
     preferredUsername: account,
-    name: metas.site,
-    summary: metas.description,
-    url: site.options.location.toString(),
+    name: metas?.site,
+    summary: metas?.description,
+    url: domain,
     discoverable: true,
     memorial: false,
     icon: {
       type: 'Image',
       mediaType: 'image/png',
-      url: `https://${domain}/assets/images/sad-viking-favicon-64.png`,
+      url: `${domain.origin}/assets/images/sad-viking-favicon-64.png`,
     },
     // image: {
     //   type: 'Image',
@@ -30,9 +26,9 @@ export default function ({ metas }) {
     // },
     publicKey: {
       '@context': 'https://w3id.org/security/v1',
-      '@id': `https://${domain}/@${account}#main-key`,
+      '@id': `${domain.origin}/@${account}#main-key`,
       '@type': 'Key',
-      controller: `https://${domain}/@${account}`,
+      controller: `${domain.origin}/@${account}`,
       publicKeyPem: `-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtDbr2qQMdt+TIT8PpNdM
 uNIv+ngyIOwPUWZ75tOy9PMS22W800MfDQj1R4RQZwL8nRDqXlmytmlhQEf+l1sY
@@ -64,5 +60,8 @@ vwIDAQAB
     //   },
     // ],
   };
-  return JSON.stringify(actor, null, 2);
+  yield {
+    url: `/@${account}`,
+    content: JSON.stringify(actor, null, 2),
+  };
 }
