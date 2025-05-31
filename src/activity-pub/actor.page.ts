@@ -1,7 +1,7 @@
 import { account, domain } from './_config.ts';
 import site from '../../_config.ts';
 
-export const url = `/${account}`;
+export const url = `/@${account}`;
 
 export default function ({ metas }) {
   const actor = {
