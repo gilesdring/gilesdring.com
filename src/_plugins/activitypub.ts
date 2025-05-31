@@ -132,6 +132,7 @@ function activitypub(
 
     function generateNote(page: Lume.Data) {
       const link = new URL(page.url, site.options.location);
+      const { account, domain } = config;
 
       const content = page.page.document.querySelector('main');
 
@@ -139,13 +140,13 @@ function activitypub(
         '@context': 'https://www.w3.org/ns/activitystreams',
         id: `${link}#create`,
         type: 'Create',
-        actor: `${config.domain}/@${config.account}`,
+        actor: `${domain.origin}/@${account}`,
         object: {
           id: link,
           type: 'Note',
           content: content?.innerHTML,
           url: link,
-          attributedTo: `${config.domain}/@${config.account}`,
+          attributedTo: `${domain.origin}/@${account}`,
           to: 'https://www.w3.org/ns/activitystreams#Public',
           cc: [],
           published: page.date,
