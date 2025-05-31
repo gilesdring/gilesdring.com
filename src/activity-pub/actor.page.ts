@@ -30,9 +30,9 @@ export default function ({ metas }) {
     // },
     publicKey: {
       '@context': 'https://w3id.org/security/v1',
+      '@id': `https://${domain}/@${account}#main-key`,
       '@type': 'Key',
-      id: `https://${domain}/@${account}#main-key`,
-      owner: `https://${domain}/@${account}`,
+      controller: `https://${domain}/@${account}`,
       publicKeyPem: `-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtDbr2qQMdt+TIT8PpNdM
 uNIv+ngyIOwPUWZ75tOy9PMS22W800MfDQj1R4RQZwL8nRDqXlmytmlhQEf+l1sY
