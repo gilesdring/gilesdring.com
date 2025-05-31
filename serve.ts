@@ -25,7 +25,7 @@ function mimetype(typeMap: { [k: string]: string }): Middleware {
 }
 
 server.use(mimetype({
-  '/@fedi': 'application/activity+json;',
+  '/fedi': 'application/activity+json;',
   '/activitypub/.+': 'application/activity+json;',
   '/.well-known/webfinger': 'application/json;',
 }));
