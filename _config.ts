@@ -57,6 +57,15 @@ site.use(extractDate());
 site.use(activitypub({
   account: 'fedi',
   domain: new URL('https://gilesdring.com'),
+  publicKey: `-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtDbr2qQMdt+TIT8PpNdM
+uNIv+ngyIOwPUWZ75tOy9PMS22W800MfDQj1R4RQZwL8nRDqXlmytmlhQEf+l1sY
+HWS+fGrBdqmSq8h5hoSgV+U2mDcCXWqmcvl39nrz46bHgXOsqlX2rNIza484TYLh
++xDtbRLKXxOWLitrCregl86BYRaBzJq6M08Cnog3wPzp8tpfTPsqYGGosk+XE7WT
+nml816hQytE8u80jo4V1v88JQGnFpBz6E8c97EFVnZEs5oiLJDuhscuYNLeU3x1q
+b/CFJk1a7EPR5OiP2AqsEBTahV0i/80ENkpN53I4qUkSEu3MfmscYuxujgyo6Xnx
+vwIDAQAB
+-----END PUBLIC KEY-----`
 }));
 
 site.add('assets/style.css');
