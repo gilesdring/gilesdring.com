@@ -10,7 +10,7 @@ export default function () {
       {
         rel: 'self',
         type: 'application/activity+json',
-        href: `https://${domain}/@{account}`,
+        href: `https://${domain}/@${account}`,
       },
       {
         rel: 'http://webfinger.net/rel/profile-page',
