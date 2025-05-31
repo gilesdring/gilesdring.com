@@ -16,6 +16,7 @@ export type ActivityPubOptions = {
   publicKey: string;
   domain?: URL;
   urls?: Partial<{
+    inbox: string;
     outbox: string;
     notes: string;
   }>;
@@ -42,6 +43,7 @@ function activitypub(
       ...options,
       urls: {
         outbox: '/activitypub/outbox',
+        inbox: '/activitypub/inbox',
         notes: '/activitypub/notes',
       },
     };
@@ -80,7 +82,7 @@ function activitypub(
         following: 'https://mastodon.me.uk/users/gilesdring/following',
         followers: 'https://mastodon.me.uk/users/gilesdring/followers',
         outbox: `${domain.origin}${urls.outbox}`,
-        // inbox: 'https://activitypubdotnet.azurewebsites.net/api/Inbox',
+        inbox: `${domain.origin}${urls.inbox}`,
         preferredUsername: account,
         // name: metas?.site,
         // summary: metas?.description,
