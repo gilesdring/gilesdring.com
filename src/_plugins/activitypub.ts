@@ -134,7 +134,9 @@ function activitypub(
       const link = new URL(page.url, site.options.location);
       const { account, domain } = config;
 
-      const content = page.page.document.querySelector('main');
+      // const content = page.page.document.querySelector('main')?.innerHTML;
+
+      const content = `${page.title}<br><a href="${link}">${link}</a>`;
 
       const note = {
         '@context': 'https://www.w3.org/ns/activitystreams',
@@ -144,7 +146,7 @@ function activitypub(
         object: {
           id: link,
           type: 'Note',
-          content: content?.innerHTML,
+          content: content,
           url: link,
           attributedTo: `${domain.origin}/@${account}`,
           to: 'https://www.w3.org/ns/activitystreams#Public',
