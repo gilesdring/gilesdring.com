@@ -65,7 +65,7 @@ HWS+fGrBdqmSq8h5hoSgV+U2mDcCXWqmcvl39nrz46bHgXOsqlX2rNIza484TYLh
 nml816hQytE8u80jo4V1v88JQGnFpBz6E8c97EFVnZEs5oiLJDuhscuYNLeU3x1q
 b/CFJk1a7EPR5OiP2AqsEBTahV0i/80ENkpN53I4qUkSEu3MfmscYuxujgyo6Xnx
 vwIDAQAB
------END PUBLIC KEY-----`
+-----END PUBLIC KEY-----`,
 }));
 
 site.add('assets/style.css');
