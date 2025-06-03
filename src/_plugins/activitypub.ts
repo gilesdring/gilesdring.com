@@ -62,7 +62,7 @@ export function activitypub(
       const note = {
         '@context': 'https://www.w3.org/ns/activitystreams',
         id: `${link}-create`,
-        type: 'Create',
+        type: 'Update',
         actor: actor.id,
         object: {
           id: link,
