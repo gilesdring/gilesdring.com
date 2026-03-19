@@ -4,17 +4,12 @@ title: Welcome
 ---
 
 <section>
-  <header>
-    <h2><a href="/blog/">Writing</a></h2>
-  </header>
   {{ for post of search.pages("blog-post", "date=desc", 3) }}
-    {{ comp.post.ListItem({ post, level: 3 }) }}
-    {{# <li class="solid-block"><a href="{{ post.url }}">
-    <h3>{{ post.title }}</h3>
-    </a></li> #}}
+    {{ comp.post.ListItem({ post }) }}
   {{ /for }}
 </section>
 
+{{ if false }}
 <hr>
 
 <section style="--layer-colour: hsl(190, 20%, 30%, 40%);">
@@ -35,3 +30,5 @@ title: Welcome
   {{ /comp }}
 
 </section>
+
+{{ /if }}

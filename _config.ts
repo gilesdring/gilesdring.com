@@ -77,4 +77,6 @@ site.add('squarespace_images/');
 site.copy('vallers2013/');
 site.copy('spinner/');
 
+site.mergeKey("breadcrumbs", "array");
+
 export default site;

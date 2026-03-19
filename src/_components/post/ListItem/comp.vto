@@ -8,7 +8,8 @@
   {{ else }}
   {{ post.content |> md |> vto(post.page.data) }}
   {{ /if }}
-  <footer>
+  <footer class="no-space">
     {{ comp.post.Metadata({ post: post })}}
   </footer>
+  <hr>
 </article>

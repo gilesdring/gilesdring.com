@@ -1,0 +1,5 @@
+[data-comp="layout.CrossPage"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: var(--vertical-align, center);
+}

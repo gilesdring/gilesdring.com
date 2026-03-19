@@ -1,10 +1,17 @@
 
 {{ if page.data.breadcrumbs }}
 <nav data-comp="breadcrumbs">
-<ol>
-{{ for crumb of page.data.breadcrumbs }}
-<li><a href="{{ crumb.link }}">{{ crumb.title }}</a></li>
+<ol class="no-space">
+{{ for crumb of breadcrumbs }}
+{{ set thisPage = crumb.link === url}}
+<li>
+    {{- if !thisPage }}<a href="{{ crumb.link }}">{{ /if -}}
+    {{ crumb.title || search.page("url=" + crumb.link).title }}
+    {{- if !thisPage }}</a>{{ /if -}}
+</li>
+{{ if thisPage }}{{ set hideCurrent = true}}{{ /if }}
 {{ /for }}
+{{ if !hideCurrent }}<li>{{ title }}</li>{{ /if }}
 </ol>
 </nav>
 {{ /if }}

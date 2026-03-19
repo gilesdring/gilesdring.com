@@ -1,15 +1,4 @@
-body > header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1em;
-
-  > * {
-    flex-grow: 0;
-    &.padding {
-      flex-grow: 1;
-    }
-  }
-
+[data-comp="Header"] {
   > a {
     font-size: 1.5em;
     display: flex;
