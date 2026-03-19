@@ -19,5 +19,5 @@ meta: {}
 
 {{ for project of search.pages('project !catalogue') -}}
 {{ comp.Excerpt({ ...project }) }}
-{{- endfor -}}
+{{- /for -}}
 
