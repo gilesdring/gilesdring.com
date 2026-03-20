@@ -41,6 +41,7 @@
     "include": [
       "_site",
       "serve.ts",
+      "lib/middlewares.ts",
       "deno.json"
     ],
     "entrypoint": "serve.ts"

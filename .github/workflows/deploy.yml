@@ -29,4 +29,5 @@ jobs:
             _site/
             deno.json
             serve.ts
+            lib/middlewares.ts
           entrypoint: serve.ts
