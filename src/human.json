@@ -1,0 +1,18 @@
+{
+    "version": "0.1.1",
+    "url": "https://gilesdring.com",
+    "vouches": [
+        {
+            "url": "https://sam.pikesley.org",
+            "vouched_at": "2026-03-20"
+        },
+        {
+            "url": "https://floppy.org.uk",
+            "vouched_at": "2026-03-20"
+        },
+        {
+            "url": "hhttps://shkspr.mobi/blog",
+            "vouched_at": "2026-03-20"
+        }
+    ]
+}

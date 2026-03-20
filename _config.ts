@@ -79,6 +79,7 @@ vwIDAQAB
 -----END PUBLIC KEY-----`,
 }));
 
+site.add('/human.json');
 site.add('assets/');
 
 site.add('squarespace_images/');
