@@ -1,6 +1,5 @@
 ---
 title: AI policy
-draft: true
 ---
 
 This is my personal policy around use of AI (as at 2026), specifically large language models.
