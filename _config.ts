@@ -8,6 +8,8 @@ import metas from 'lume/plugins/metas.ts';
 import minify_html from 'lume/plugins/minify_html.ts';
 import postcss from 'lume/plugins/postcss.ts';
 
+import { fontsource } from "@dringtech/lume-utils/plugin";
+
 import activitypub from './src/_plugins/activitypub.ts';
 
 const site = lume({
@@ -52,6 +54,13 @@ site.use(feed({
   },
 }));
 
+site.use(await fontsource({
+  fonts: [
+    "montagu-slab",
+    "overpass"
+  ],
+}))
+
 site.use(extractDate());
 
 site.use(activitypub({
@@ -68,9 +77,8 @@ vwIDAQAB
 -----END PUBLIC KEY-----`,
 }));
 
-site.add('assets/style.css');
+site.add('assets/');
 
-site.add('assets/images');
 site.add('squarespace_images/');
 
 // Copy over old projects

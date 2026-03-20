@@ -11,4 +11,7 @@
   --dark-contrast: hsl(64, 73%, 51%);
   --page-bg-colour: hsl(var(--site-hue), 90%, 10%);
   --page-bg-image: var(--bg-image);
+
+  --main-fontstack: 'Montagu Slab Variable', serif;
+  --heading-fontstack: 'Overpass Variable', sans-serif;
 }

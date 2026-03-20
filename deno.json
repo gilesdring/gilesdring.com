@@ -1,5 +1,8 @@
 {
   "imports": {
+    "@dringtech/lume-utils": "jsr:@dringtech/lume-utils@^0.0.7",
+    "@fontsource-variable/montagu-slab": "npm:@fontsource-variable/montagu-slab@^5.2.10",
+    "@fontsource-variable/overpass": "npm:@fontsource-variable/overpass@^5.2.8",
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.2/",
     "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.14.16/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.14/jsx-runtime.ts"
@@ -18,6 +21,7 @@
       "command": "deno task lume -s"
     }
   },
+  "nodeModulesDir": "auto",
   "unstable": [
     "temporal",
     "fmt-component"
@@ -92,7 +96,8 @@
         "jsr.io:443",
         "deno.land:443",
         "esm.sh:443",
-        "registry.npmjs.org:443"
+        "registry.npmjs.org:443",
+        "api.fontsource.org:443"
       ],
       "env": true,
       "run": true,

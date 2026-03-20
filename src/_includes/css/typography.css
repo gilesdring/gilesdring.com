@@ -1,22 +1,25 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-family: var(--main-fontstack);
+  font-weight: 300;
   font-size: 1em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Dosis', sans-serif;
-  font-weight: 200;
+h1, h2, h3, h4, h5, h6, header.site {
+  font-family: var(--heading-fontstack);
+  font-weight: 800;
+  & a {
+    text-decoration: none;
+  }
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 h2 {
-  font-size: 1.3em;
+  font-size: 1.7em;
 }
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-style: oblique;
 }
 
