@@ -22,14 +22,17 @@
 
   ol {
     --breadcrumb-gap: 0.7ch;
-    display: flex;
     padding-inline: 0;
     margin: 0;
     list-style: none;
-    gap: var(--breadcrumb-gap);
+    white-space: nowrap;
+    overflow-x: visible;
+    > li {
+      display: inline
+    }
     > li + li:before {
       content: '\00BB';
-      padding-right: var(--breadcrumb-gap);
+      padding-inline: var(--breadcrumb-gap);
     }
   }
 }
