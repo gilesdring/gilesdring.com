@@ -12,6 +12,7 @@ import postcss from 'lume/plugins/postcss.ts';
 import { fontsource } from "@dringtech/lume-utils/plugin";
 
 import { exerptProcessor } from "./lib/excerpt.ts";
+import { timeStamp } from "./lib/cache-buster.ts";
 import { weeknoteProcessor } from "./lib/weeknotes.ts";
 
 import activitypub from './src/_plugins/activitypub.ts';
@@ -25,6 +26,10 @@ const site = lume({
       typographer: true
     }
   }
+});
+
+site.data('buildInfo', {
+  timestamp: timeStamp()
 });
 
 site.preprocess(['.md'], exerptProcessor);

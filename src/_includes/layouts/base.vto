@@ -8,8 +8,8 @@
   <title>{{ title }} &mdash; {{ metas.site }}</title>
   <link rel="stylesheet" href="/assets/fonts/montagu-slab.css">
   <link rel="stylesheet" href="/assets/fonts/stack-sans-headline.css">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/style.css?t={{ buildInfo.timestamp }}">
+  <link rel="stylesheet" href="/assets/style.css?t={{ buildInfo.timestamp }}">
 </head>
 <body>
   {{ content }}
