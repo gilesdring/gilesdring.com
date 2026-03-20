@@ -16,7 +16,7 @@ published: true
 meta: {}
 ---
 
-{{ comp.embed.Soundcloud({ track: '54740779' })}}
+<html>{{ comp.embed.Soundcloud({ track: '54740779' })}}</html>
 
 <p>
   Talking, as we were, about New Order covers, here’s one by my current

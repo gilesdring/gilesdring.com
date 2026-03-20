@@ -11,7 +11,7 @@ published: true
 meta: {}
 ---
 
-{{ comp.embed.YouTube({ id: 'YAtB2zSLly8' }) }}
+<html>{{ comp.embed.YouTube({ id: 'YAtB2zSLly8' }) }}</html>
 
 <p>
   Actually, we used the heck out of the Harvey Karp book, and it seemed to

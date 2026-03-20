@@ -6,10 +6,11 @@ const cms = lumeCMS();
 
 cms.collection({
   name: 'posts',
-  store: 'src:blog/*.md',
+  store: 'src:blog/**/*.md',
   fields: [
     'title: text',
     { name: 'tags', type: 'list', view: 'detail' },
+    { name: 'draft', type: 'checkbox', view: 'detail' },
     'content: markdown',
   ],
   documentLabel(name) {

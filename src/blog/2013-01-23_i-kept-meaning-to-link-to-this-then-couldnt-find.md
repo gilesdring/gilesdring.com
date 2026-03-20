@@ -16,7 +16,7 @@ published: true
 meta: {}
 ---
 
-{{ comp.embed.YouTube({ id: 'IFe9wiDfb0E' }) }}
+<html>{{ comp.embed.YouTube({ id: 'IFe9wiDfb0E' }) }}</html>
 
 <p>
   I kept meaning to link to this, then couldn’t find it, then did again, and

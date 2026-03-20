@@ -16,6 +16,6 @@ published: true
 meta: {}
 ---
 
-{{ comp.embed.YouTube({ id: '9FMjCB5-xw8' }) }}
+<html>{{ comp.embed.YouTube({ id: '9FMjCB5-xw8' }) }}</html>
 
 <p>One of the funniest things I’ve seen in a long while. Perfectly paced.</p>

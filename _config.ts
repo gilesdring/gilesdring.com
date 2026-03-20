@@ -15,6 +15,12 @@ import activitypub from './src/_plugins/activitypub.ts';
 const site = lume({
   src: './src',
   location: new URL('https://gilesdring.com/'),
+}, {
+  markdown: {
+    options: {
+      typographer: true
+    }
+  }
 });
 
 site.preprocess(['.md'], (pages) => {

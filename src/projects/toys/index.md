@@ -10,7 +10,7 @@ description: |
   From time to time I create something useful for a specific purpose.
   These often find repeated use, and I'm sharing them here in case they are of
   interest to you.
-templateEngine: md, vto
+templateEngine: vto,md
 ---
 From time to time I create something useful for a specific purpose.
 These often find repeated use, and I'm sharing them here in case they are of

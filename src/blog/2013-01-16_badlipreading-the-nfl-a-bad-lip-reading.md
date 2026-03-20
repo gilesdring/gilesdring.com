@@ -12,6 +12,6 @@ meta: {}
 ---
 <p>Just weird, but oddly compelling...</p>
 
-{{ comp.embed.YouTube({ id: 'Zce-QT7MGSE' }) }}
+<html>{{ comp.embed.YouTube({ id: 'Zce-QT7MGSE' }) }}</html>
 
 <p>via <a href="http://badlipreading.tumblr.com/post/40628383839">badlipreading</a></p>
