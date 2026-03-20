@@ -1,10 +1,16 @@
 [data-comp="Header"] {
+  font-size: 2rem;
+
   > a {
-    font-size: 1.5em;
     display: flex;
     padding: 0;
     line-height: initial;
     align-items: center;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   svg {
@@ -19,5 +25,6 @@
 
   div {
     word-wrap: break-word;
+    padding-inline: 0.2em;
   }
 }

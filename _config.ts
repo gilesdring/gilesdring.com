@@ -63,7 +63,7 @@ site.use(feed({
 site.use(await fontsource({
   fonts: [
     "montagu-slab",
-    "overpass"
+    "stack-sans-headline"
   ],
 }))
 

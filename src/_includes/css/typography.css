@@ -4,9 +4,10 @@ body {
   font-size: 1em;
 }
 
-h1, h2, h3, h4, h5, h6, header.site {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-fontstack);
   font-weight: 800;
+  font-weight: normal;
   & a {
     text-decoration: none;
   }

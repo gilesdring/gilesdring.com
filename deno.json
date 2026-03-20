@@ -2,7 +2,7 @@
   "imports": {
     "@dringtech/lume-utils": "jsr:@dringtech/lume-utils@^0.0.7",
     "@fontsource-variable/montagu-slab": "npm:@fontsource-variable/montagu-slab@^5.2.10",
-    "@fontsource-variable/overpass": "npm:@fontsource-variable/overpass@^5.2.8",
+    "@fontsource-variable/stack-sans-headline": "npm:@fontsource-variable/stack-sans-headline@^5.2.1",
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.2/",
     "lume/cms/": "https://cdn.jsdelivr.net/gh/lumeland/cms@0.14.16/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.14/jsx-runtime.ts"
