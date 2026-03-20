@@ -28,6 +28,7 @@ const site = lume({
   }
 });
 
+site.data('layout', '/layouts/page.vto')
 site.data('buildInfo', {
   timestamp: timeStamp()
 });
