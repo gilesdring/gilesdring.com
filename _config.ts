@@ -1,5 +1,6 @@
 import lume from 'lume/mod.ts';
 import base_path from 'lume/plugins/base_path.ts';
+import codeHighlight from 'lume/plugins/code_highlight.ts';
 import date from 'lume/plugins/date.ts';
 import extractDate from 'lume/plugins/extract_date.ts';
 import feed from 'lume/plugins/feed.ts';
@@ -9,6 +10,9 @@ import minify_html from 'lume/plugins/minify_html.ts';
 import postcss from 'lume/plugins/postcss.ts';
 
 import { fontsource } from "@dringtech/lume-utils/plugin";
+
+import { exerptProcessor } from "./lib/excerpt.ts";
+import { weeknoteProcessor } from "./lib/weeknotes.ts";
 
 import activitypub from './src/_plugins/activitypub.ts';
 
@@ -23,22 +27,8 @@ const site = lume({
   }
 });
 
-site.preprocess(['.md'], (pages) => {
-  for (const page of pages) {
-    const excerptMarker = /<!--\s*more\s*-->/;
-    if (page.data.content && page.data.content!.match(excerptMarker)) {
-      const excerpt = page.data.content.split(excerptMarker)[0];
-      page.data.excerpt = excerpt;
-    }
-    // const excerpt = (page.data.content && page.data.content!.match(/<!--more-->/)) ? page.data.content.split(/<!--more-->/)[0] : undefined;
-    // console.log(excerpt);
-    // if (
-    //   page.content.match(/^<!--more-->/)
-    // ) {
-    //   console.log(page.src.path);
-    // };
-  }
-});
+site.preprocess(['.md'], exerptProcessor);
+site.preprocess(['.html'], weeknoteProcessor);
 
 site.ignore('admin');
 
@@ -68,6 +58,7 @@ site.use(await fontsource({
 }))
 
 site.use(extractDate());
+site.use(codeHighlight());
 
 site.use(activitypub({
   account: 'fedi',
