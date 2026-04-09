@@ -34,17 +34,8 @@
     "jsxImportSource": "lume"
   },
   "deploy": {
-    "project": "f7946455-02a5-45de-921b-1a28b7f80c6d",
-    "exclude": [
-      "**/node_modules"
-    ],
-    "include": [
-      "_site",
-      "serve.ts",
-      "lib/middlewares.ts",
-      "deno.json"
-    ],
-    "entrypoint": "serve.ts"
+    "org": "gilesdring",
+    "app": "website"
   },
   "lint": {
     "include": [
@@ -106,5 +97,11 @@
       "sys": true
     }
   },
-  "lock": false
+  "lock": false,
+  "allowScripts": {
+    "deny": [
+      "npm:sharp"
+    ]
+  }
 }
+
