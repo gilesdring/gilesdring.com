@@ -1,19 +1,19 @@
 body {
-  color: #e4e4e4;
-  background-color: var(--page-bg-colour);
+  color: var(--foreground-colour);
+  background-color: var(--background-colour);
+  background-image: var(--background-image);
+  background-blend-mode: var(--background-blend);
   background-attachment: fixed;
-  background-image: var(--page-bg-image);
 }
 
 main {
-  --layer-colour: hsl(55, 80%, 5%, 10%);
   padding-block: 2rem;
   backdrop-filter: blur(3px);
 }
 
 .layered {
   background-color: var(--layer-colour);
-  border: 1px solid hsl(55, 80%, 5%);
-  box-shadow: hsl(0, 0%, 0%, 10%) 0 0 10px 5px;
+  border: 1px solid var(--outline-colour);
+  box-shadow: var(--outline-colour-transparent) 0 0 10px 5px;
   border-radius: 5px;
 }

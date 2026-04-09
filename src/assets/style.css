@@ -6,14 +6,34 @@
 @import "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/styles/github-dark-dimmed.min.css";
 
 :root {
-  --bg-image: url('/assets/images/arches-trans.png');
   --site-logo: url('/assets/images/sad-viking.svg');
-  --site-hue: 190;
-  --dark: hsl(229, 47%, 22%);
-  --dark-contrast: hsl(64, 73%, 51%);
-  --page-bg-colour: hsl(var(--site-hue), 90%, 10%);
-  --page-bg-image: var(--bg-image);
+  --site-hue: 65;
+
+  --foreground-colour: hsl(var(--site-hue), 20%, 10%);
+  --background-colour: hsl(var(--site-hue), 20%, 70%);
+  --background-image: url('/assets/images/arches-trans.png');
+  --background-blend: normal;
+
+  --outline-colour: hsl(var(--site-hue), 80%, 5%);
+  --outline-colour-transparent: hsl(var(--site-hue), 80%, 5%, 10%);
+
+  --layer-colour: hsla(var(--site-hue), 10%, 20%, 25%);
+
+  --contrast-background: hsl(var(--site-hue), 15%, 20%);
+  --contrast-foreground: hsl(var(--site-hue), 60%, 80%);
 
   --main-fontstack: 'Montagu Slab Variable', serif;
   --heading-fontstack: 'Stack Sans Headline Variable', sans-serif;
+ 
+  @media (prefers-color-scheme: dark) {
+    & {
+      --foreground-colour: hsl(var(--site-hue), 10%, 70%);
+      --background-colour: hsl(var(--site-hue), 10%, 10%);
+      --layer-colour: hsla(var(--site-hue), 10%, 25%, 25%);
+      --background-blend: color-burn;
+
+      --contrast-foreground: hsl(var(--site-hue), 60%, 10%);
+      --contrast-background: hsl(var(--site-hue), 15%, 75%);
+    }
+  }
 }

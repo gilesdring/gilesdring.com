@@ -26,8 +26,8 @@ h3 {
 
 a {
   &:hover {
-    color: #111111;
-    background-color: yellow;
+    color: var(--contrast-background);
+    background-color: var(--contrast-foreground);
     text-decoration: underline;
   }
 }
