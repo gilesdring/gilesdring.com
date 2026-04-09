@@ -5,12 +5,13 @@ const cms = lumeCMS();
 // Configuration here
 
 cms.collection({
-  name: 'posts',
+  name: 'blog',
   store: 'src:blog/**/*.md',
   fields: [
     'title: text',
     { name: 'tags', type: 'list', view: 'detail' },
     { name: 'draft', type: 'checkbox', view: 'detail' },
+    { name: 'description', type: 'textarea', view: 'detail'},
     'content: markdown',
   ],
   documentLabel(name) {

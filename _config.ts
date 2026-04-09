@@ -8,11 +8,12 @@ import inline from 'lume/plugins/inline.ts';
 import metas from 'lume/plugins/metas.ts';
 import minify_html from 'lume/plugins/minify_html.ts';
 import postcss from 'lume/plugins/postcss.ts';
+import footnote from "npm:markdown-it-footnote";
 
 import { fontsource } from "@dringtech/lume-utils/plugin";
 
-import { exerptProcessor } from "./lib/excerpt.ts";
 import { timeStamp } from "./lib/cache-buster.ts";
+import { exerptProcessor } from "./lib/excerpt.ts";
 import { weeknoteProcessor } from "./lib/weeknotes.ts";
 
 import activitypub from './src/_plugins/activitypub.ts';
@@ -24,7 +25,8 @@ const site = lume({
   markdown: {
     options: {
       typographer: true
-    }
+    },
+    plugins: [footnote]
   }
 });
 
