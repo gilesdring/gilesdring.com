@@ -3,7 +3,7 @@ layout: layouts/base.vto
 ---
 {{ comp layout.CrossPage }}
   {{ comp.Header({ page })  }}
-  {{ comp.Nav({ page }) }}
+  {{ comp.Nav({ url }) }}
 {{ /comp }}
 {{ comp.Breadcrumbs( { ...page.data } ) }}
 <main role="main" class="layered">
