@@ -30,7 +30,8 @@ const site = lume({
 
 site.data('layout', '/layouts/page.vto')
 site.data('buildInfo', {
-  timestamp: timeStamp()
+  timestamp: timeStamp(),
+  date: Temporal.Now.plainDateISO().toString(),
 });
 
 site.preprocess(['.md'], exerptProcessor);
