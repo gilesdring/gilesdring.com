@@ -9,15 +9,15 @@
   --site-logo: url('/assets/images/sad-viking.svg');
   --site-hue: 65;
 
-  --foreground-colour: hsl(var(--site-hue), 20%, 10%);
-  --background-colour: hsl(var(--site-hue), 20%, 70%);
+  --foreground-colour: hsl(var(--site-hue), 10%, 10%);
+  --background-colour: hsl(var(--site-hue), 5%, 70%);
   --background-image: url('/assets/images/arches-trans.png');
   --background-blend: normal;
 
   --outline-colour: hsl(var(--site-hue), 80%, 5%);
   --outline-colour-transparent: hsl(var(--site-hue), 80%, 5%, 10%);
 
-  --layer-colour: hsla(var(--site-hue), 10%, 20%, 25%);
+  --layer-colour: hsla(var(--site-hue), 10%, 10%, 15%);
 
   --contrast-background: hsl(var(--site-hue), 15%, 20%);
   --contrast-foreground: hsl(var(--site-hue), 60%, 80%);
@@ -27,13 +27,13 @@
  
   @media (prefers-color-scheme: dark) {
     & {
-      --foreground-colour: hsl(var(--site-hue), 10%, 70%);
-      --background-colour: hsl(var(--site-hue), 10%, 10%);
-      --layer-colour: hsla(var(--site-hue), 10%, 25%, 25%);
+      --foreground-colour: hsl(var(--site-hue), 5%, 80%);
+      --background-colour: hsl(var(--site-hue), 5%, 15%);
+      --layer-colour: hsla(var(--site-hue), 10%, 15%, 25%);
       --background-blend: color-burn;
 
-      --contrast-foreground: hsl(var(--site-hue), 60%, 10%);
-      --contrast-background: hsl(var(--site-hue), 15%, 75%);
+      --contrast-foreground: hsl(var(--site-hue), 60%, 15%);
+      --contrast-background: hsl(var(--site-hue), 15%, 80%);
     }
   }
 }
