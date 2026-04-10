@@ -22,6 +22,6 @@ jobs:
 
       - name: Deploy to Deno Deploy
         shell: bash
-        run: deno deploy --prod --no-wait
+        run: deno deploy --no-wait
         env: # Or as an environment variable
           DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
