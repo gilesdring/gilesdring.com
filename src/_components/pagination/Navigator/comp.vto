@@ -1,5 +1,5 @@
-<nav class="pagination">
-<a href="{{ pagination.previous }}" {{ if !pagination.previous }} disabled{{ /if }}>Previous</a>
-<span class="page_number">Page {{ pagination.page }} of {{ pagination.totalPages }}</span>
-<a href="{{ pagination.next }}" {{ if !pagination.next }} disabled{{ /if }}>Next</a>
+<nav class="pagination no-space">
+<span><a href="{{ pagination.previous }}" {{ if !pagination.previous }} disabled{{ /if }}>Previous</a>
+</span><span class="page_number">Page {{ pagination.page }} of {{ pagination.totalPages }}
+</span><span><a href="{{ pagination.next }}" {{ if !pagination.next }} disabled{{ /if }}>Next</a></span>
 </nav>
