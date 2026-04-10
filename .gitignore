@@ -5,3 +5,5 @@ old-blog-posts/
 /*.pem
 
 node_modules/
+
+.env

@@ -13,21 +13,15 @@ jobs:
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Deno environment
         uses: denoland/setup-deno@v2
-
-      - name: Build site
-        run: deno task build
+        with:
+          deno-version: v2.x # Run with latest stable Deno.
 
       - name: Deploy to Deno Deploy
-        uses: denoland/deployctl@v1
-        with:
-          project: proud-rat-94
-          include: |
-            _site/
-            deno.json
-            serve.ts
-            lib/middlewares.ts
-          entrypoint: serve.ts
+        shell: bash
+        run: deno deploy --prod --no-wait
+        env: # Or as an environment variable
+          DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
