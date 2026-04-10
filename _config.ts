@@ -7,6 +7,7 @@ import feed from 'lume/plugins/feed.ts';
 import inline from 'lume/plugins/inline.ts';
 import metas from 'lume/plugins/metas.ts';
 import minify_html from 'lume/plugins/minify_html.ts';
+import pagefind from "lume/plugins/pagefind.ts";
 import postcss from 'lume/plugins/postcss.ts';
 import footnote from "npm:markdown-it-footnote";
 
@@ -45,7 +46,13 @@ site.use(base_path());
 site.use(date());
 site.use(metas());
 site.use(inline());
-site.use(minify_html());
+site.use(pagefind({
+  // ui: false,
+  ui: {
+    // resetStyles: false,
+    // showImages: true,
+  }
+}));
 site.use(postcss());
 site.use(feed({
   query: 'blog-post',
@@ -93,5 +100,7 @@ site.copy('vallers2013/');
 site.copy('spinner/');
 
 site.mergeKey("breadcrumbs", "array");
+
+site.use(minify_html());
 
 export default site;

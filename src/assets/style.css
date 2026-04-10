@@ -24,7 +24,19 @@
 
   --main-fontstack: 'Montagu Slab Variable', serif;
   --heading-fontstack: 'Stack Sans Headline Variable', sans-serif;
- 
+
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--contrast-foreground);
+  --pagefind-ui-text: var(--foreground-colour);
+  --pagefind-ui-background: var(--background-colour);
+  --pagefind-ui-border: var(--outline-colour);
+  --pagefind-ui-tag: var(--outline-colour);
+  --pagefind-ui-border-width: 2px;
+  --pagefind-ui-border-radius: 8px;
+  --pagefind-ui-image-border-radius: 8px;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: var(--main-fontstack);  
+
   @media (prefers-color-scheme: dark) {
     & {
       --foreground-colour: hsl(var(--site-hue), 5%, 80%);
