@@ -1,5 +1,6 @@
 ---
-
+draft: true
+---
 Ten all-time favorite albums, that really made an impact and is still on your rotation list, even if only now and then. Post the cover. No need to explain (but you can).
 
 ## Real to Real Cacophony by Simple Minds
